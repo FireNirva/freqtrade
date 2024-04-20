@@ -11,8 +11,8 @@ from numpy import NaN
 from pandas import DataFrame
 
 from freqtrade.enums import CandleType, MarginMode, RunMode, TradingMode
-from freqtrade.exceptions import (DDosProtection, DependencyException, ExchangeError,
-                                  InsufficientFundsError, InvalidOrderException,
+from freqtrade.exceptions import (ConfigurationError, DDosProtection, DependencyException,
+                                  ExchangeError, InsufficientFundsError, InvalidOrderException,
                                   OperationalException, PricingError, TemporaryError)
 from freqtrade.exchange import (Binance, Bybit, Exchange, Kraken, market_is_active,
                                 timeframe_to_prev_date)
@@ -90,7 +90,7 @@ def ccxt_exceptionhandlers(mocker, default_conf, api_mock, exchange_name,
         assert api_mock.__dict__[mock_ccxt_fun].call_count == retries
 
     with pytest.raises(TemporaryError):
-        api_mock.__dict__[mock_ccxt_fun] = MagicMock(side_effect=ccxt.NetworkError("DeaDBeef"))
+        api_mock.__dict__[mock_ccxt_fun] = MagicMock(side_effect=ccxt.OperationFailed("DeaDBeef"))
         exchange = get_patched_exchange(mocker, default_conf, api_mock, id=exchange_name)
         getattr(exchange, fun)(**kwargs)
     assert api_mock.__dict__[mock_ccxt_fun].call_count == retries
@@ -595,7 +595,7 @@ def test_validate_stakecurrency_error(default_conf, mocker, caplog):
     mocker.patch(f'{EXMS}.validate_pairs')
     mocker.patch(f'{EXMS}.validate_timeframes')
     mocker.patch(f'{EXMS}._load_async_markets')
-    with pytest.raises(OperationalException,
+    with pytest.raises(ConfigurationError,
                        match=r'XRP is not available as stake on .*'
                        'Available currencies are: BTC, ETH, USDT'):
         Exchange(default_conf)
@@ -800,12 +800,12 @@ def test_validate_timeframes_failed(default_conf, mocker):
     mocker.patch(f'{EXMS}.validate_pairs')
     mocker.patch(f'{EXMS}.validate_stakecurrency')
     mocker.patch(f'{EXMS}.validate_pricing')
-    with pytest.raises(OperationalException,
+    with pytest.raises(ConfigurationError,
                        match=r"Invalid timeframe '3m'. This exchange supports.*"):
         Exchange(default_conf)
     default_conf["timeframe"] = "15s"
 
-    with pytest.raises(OperationalException,
+    with pytest.raises(ConfigurationError,
                        match=r"Timeframes < 1m are currently not supported by Freqtrade."):
         Exchange(default_conf)
 
@@ -1065,6 +1065,9 @@ def test_exchange_has(default_conf, mocker):
     type(api_mock).has = PropertyMock(return_value={'deadbeef': False})
     exchange = get_patched_exchange(mocker, default_conf, api_mock)
     assert not exchange.exchange_has("deadbeef")
+
+    exchange._ft_has['exchange_has_overrides'] = {'deadbeef': True}
+    assert exchange.exchange_has("deadbeef")
 
 
 @pytest.mark.parametrize("side,leverage", [
@@ -3827,7 +3830,7 @@ def test_ohlcv_candle_limit(default_conf, mocker, exchange_name):
     [
         ("BTC/USDT", 'BTC', 'USDT', "binance", True, False, False, 'spot', {}, True),
         ("USDT/BTC", 'USDT', 'BTC', "binance", True, False, False, 'spot', {}, True),
-        # No seperating /
+        # No separating /
         ("BTCUSDT", 'BTC', 'USDT', "binance", True, False, False, 'spot', {}, True),
         ("BTCUSDT", None, "USDT", "binance", True, False, False, 'spot', {}, False),
         ("USDT/BTC", "BTC", None, "binance", True, False, False, 'spot', {}, False),
@@ -4343,7 +4346,7 @@ def test_combine_funding_and_mark(
     ('binance', 0, 2, "2021-09-01 00:00:01", "2021-09-01 08:00:00",  30.0, -0.00091409999),
     ('binance', 0, 2, "2021-08-31 23:58:00", "2021-09-01 08:00:00",  30.0, -0.00091409999),
     ('binance', 0, 2, "2021-09-01 00:10:01", "2021-09-01 08:00:00",  30.0, -0.0002493),
-    # TODO: Uncoment once _calculate_funding_fees can pas time_in_ratio to exchange._get_funding_fee
+    # TODO: Uncomment once _calculate_funding_fees can pass time_in_ratio to exchange.
     # ('kraken', "2021-09-01 00:00:00", "2021-09-01 08:00:00",  30.0, -0.0014937),
     # ('kraken', "2021-09-01 00:00:15", "2021-09-01 08:00:00",  30.0, -0.0008289),
     # ('kraken', "2021-09-01 01:00:14", "2021-09-01 08:00:00",  30.0, -0.0008289),
@@ -4355,7 +4358,7 @@ def test_combine_funding_and_mark(
     ('gate', 0, 2, "2021-09-01 00:00:00", "2021-09-01 12:00:00",  30.0, -0.0009140999),
     ('gate', 1, 2, "2021-09-01 00:00:01", "2021-09-01 08:00:00",  30.0, -0.0002493),
     ('binance', 0,  2, "2021-09-01 00:00:00", "2021-09-01 08:00:00",  50.0, -0.0015235),
-    # TODO: Uncoment once _calculate_funding_fees can pas time_in_ratio to exchange._get_funding_fee
+    # TODO: Uncomment once _calculate_funding_fees can pass time_in_ratio to exchange.
     # ('kraken', "2021-09-01 00:00:00", "2021-09-01 08:00:00",  50.0, -0.0024895),
 ])
 def test__fetch_and_calculate_funding_fees(

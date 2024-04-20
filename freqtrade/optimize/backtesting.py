@@ -19,6 +19,7 @@ from freqtrade.data import history
 from freqtrade.data.btanalysis import find_existing_backtest_stats, trade_list_to_dataframe
 from freqtrade.data.converter import trim_dataframe, trim_dataframes
 from freqtrade.data.dataprovider import DataProvider
+from freqtrade.data.metrics import combined_dataframes_with_rel_mean
 from freqtrade.enums import (BacktestState, CandleType, ExitCheckTuple, ExitType, RunMode,
                              TradingMode)
 from freqtrade.exceptions import DependencyException, OperationalException
@@ -33,8 +34,8 @@ from freqtrade.optimize.optimize_reports import (generate_backtest_stats, genera
                                                  show_backtest_results,
                                                  store_backtest_analysis_results,
                                                  store_backtest_stats)
-from freqtrade.persistence import (LocalTrade, Order, PairLocks, Trade, disable_database_use,
-                                   enable_database_use)
+from freqtrade.persistence import (CustomDataWrapper, LocalTrade, Order, PairLocks, Trade,
+                                   disable_database_use, enable_database_use)
 from freqtrade.plugins.pairlistmanager import PairListManager
 from freqtrade.plugins.protectionmanager import ProtectionManager
 from freqtrade.resolvers import ExchangeResolver, StrategyResolver
@@ -296,7 +297,7 @@ class Backtesting:
                 candle_type=CandleType.FUNDING_RATE
             )
 
-            # For simplicity, assign to CandleType.Mark (might contian index candles!)
+            # For simplicity, assign to CandleType.Mark (might contain index candles!)
             mark_rates_dict = history.load_data(
                 datadir=self.config['datadir'],
                 pairs=self.pairlists.whitelist,
@@ -337,6 +338,7 @@ class Backtesting:
         self.disable_database_use()
         PairLocks.reset_locks()
         Trade.reset_trades()
+        CustomDataWrapper.reset_custom_data()
         self.rejected_trades = 0
         self.timedout_entry_orders = 0
         self.timedout_exit_orders = 0
@@ -564,7 +566,8 @@ class Backtesting:
 
         if stake_amount is not None and stake_amount < 0.0:
             amount = amount_to_contract_precision(
-                abs(stake_amount * trade.leverage) / current_rate, trade.amount_precision,
+                abs(stake_amount * trade.amount / trade.stake_amount),
+                trade.amount_precision,
                 self.precision_mode, trade.contract_size)
             if amount == 0.0:
                 return trade
@@ -602,6 +605,11 @@ class Backtesting:
         if order and self._get_order_filled(order.ft_price, row):
             order.close_bt_order(current_date, trade)
             self._run_funding_fees(trade, current_date, force=True)
+            strategy_safe_wrapper(
+                self.strategy.order_filled,
+                default_retval=None)(
+                pair=trade.pair, trade=trade,  # type: ignore[arg-type]
+                order=order, current_time=current_date)
 
             if not (order.ft_order_side == trade.exit_side and order.safe_amount == trade.amount):
                 # trade is still open
@@ -881,6 +889,9 @@ class Backtesting:
             precision_amount = self.exchange.get_precision_amount(pair)
             amount = amount_to_contract_precision(amount_p, precision_amount, self.precision_mode,
                                                   contract_size)
+            if not amount:
+                # No amount left after truncating to precision.
+                return trade
             # Backcalculate actual stake amount.
             stake_amount = amount * propose_rate / leverage
 
@@ -1206,7 +1217,7 @@ class Backtesting:
         :return: DataFrame with trades (results of backtesting)
         """
         self.prepare_backtest(self.enable_protections)
-        # Ensure wallets are uptodate (important for --strategy-list)
+        # Ensure wallets are up-to-date (important for --strategy-list)
         self.wallets.update()
         # Use dict of lists with data for performance
         # (looping lists is a lot faster than pandas DataFrames)
@@ -1383,9 +1394,8 @@ class Backtesting:
     def start(self) -> None:
         """
         Run backtesting end-to-end
-        :return: None
         """
-        data: Dict[str, Any] = {}
+        data: Dict[str, DataFrame] = {}
 
         data, timerange = self.load_bt_data()
         self.load_bt_data_detail()
@@ -1412,7 +1422,9 @@ class Backtesting:
                 self.results = results
             dt_appendix = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
             if self.config.get('export', 'none') in ('trades', 'signals'):
-                store_backtest_stats(self.config['exportfilename'], self.results, dt_appendix)
+                combined_res = combined_dataframes_with_rel_mean(data, min_date, max_date)
+                store_backtest_stats(self.config['exportfilename'], self.results, dt_appendix,
+                                     market_change_data=combined_res)
 
             if (self.config.get('export', 'none') == 'signals' and
                     self.dataprovider.runmode == RunMode.BACKTEST):

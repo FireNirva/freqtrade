@@ -81,7 +81,7 @@ def test_returns_latest_signal(ohlcv_history):
     assert _STRATEGY.get_entry_signal('ETH/BTC', '5m', mocked_history) == (None, None)
 
     _STRATEGY.config['trading_mode'] = 'futures'
-    # Short signal get's ignored as can_short is not set.
+    # Short signal gets ignored as can_short is not set.
     assert _STRATEGY.get_entry_signal('ETH/BTC', '5m', mocked_history) == (None, None)
 
     _STRATEGY.can_short = True
@@ -794,9 +794,6 @@ def test_is_informative_pairs_callback(default_conf):
 def test_strategy_safe_wrapper_error(caplog, error):
     def failing_method():
         raise error('This is an error.')
-
-    def working_method(argumentpassedin):
-        return argumentpassedin
 
     with pytest.raises(StrategyError, match=r'This is an error.'):
         strategy_safe_wrapper(failing_method, message='DeadBeef')()

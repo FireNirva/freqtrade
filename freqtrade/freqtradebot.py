@@ -37,7 +37,6 @@ from freqtrade.rpc.rpc_types import (ProfitLossStr, RPCCancelMsg, RPCEntryMsg, R
                                      RPCExitMsg, RPCProtectionMsg)
 from freqtrade.strategy.interface import IStrategy
 from freqtrade.strategy.strategy_wrapper import strategy_safe_wrapper
-from freqtrade.util import FtPrecise
 from freqtrade.util.migrations import migrate_binance_futures_names
 from freqtrade.wallets import Wallets
 
@@ -65,7 +64,7 @@ class FreqtradeBot(LoggingMixin):
         # Init objects
         self.config = config
         exchange_config: ExchangeConfig = deepcopy(config['exchange'])
-        # Remove credentials from original exchange config to avoid accidental credentail exposure
+        # Remove credentials from original exchange config to avoid accidental credential exposure
         remove_exchange_credentials(config['exchange'], True)
 
         self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
@@ -118,7 +117,8 @@ class FreqtradeBot(LoggingMixin):
 
         # Protect exit-logic from forcesell and vice versa
         self._exit_lock = Lock()
-        LoggingMixin.__init__(self, logger, timeframe_to_seconds(self.strategy.timeframe))
+        timeframe_secs = timeframe_to_seconds(self.strategy.timeframe)
+        LoggingMixin.__init__(self, logger, timeframe_secs)
 
         self._schedule = Scheduler()
 
@@ -176,7 +176,7 @@ class FreqtradeBot(LoggingMixin):
         try:
             Trade.commit()
         except Exception:
-            # Exeptions here will be happening if the db disappeared.
+            # Exceptions here will be happening if the db disappeared.
             # At which point we can no longer commit anyway.
             pass
 
@@ -227,7 +227,7 @@ class FreqtradeBot(LoggingMixin):
         self.strategy.analyze(self.active_pair_whitelist)
 
         with self._exit_lock:
-            # Check for exchange cancelations, timeouts and user requested replace
+            # Check for exchange cancellations, timeouts and user requested replace
             self.manage_open_orders()
 
         # Protect from collisions with force_exit.
@@ -667,7 +667,7 @@ class FreqtradeBot(LoggingMixin):
             # We should decrease our position
             amount = self.exchange.amount_to_contract_precision(
                 trade.pair,
-                abs(float(FtPrecise(stake_amount * trade.leverage) / FtPrecise(current_exit_rate))))
+                abs(float(stake_amount * trade.amount / trade.stake_amount)))
 
             if amount == 0.0:
                 logger.info("Amount to exit is 0.0 due to exchange limits - not exiting.")
@@ -962,7 +962,7 @@ class FreqtradeBot(LoggingMixin):
         # edge-case for now.
         min_stake_amount = self.exchange.get_min_pair_stake_amount(
             pair, enter_limit_requested,
-            self.strategy.stoploss if not mode != 'pos_adjust' else 0.0,
+            self.strategy.stoploss if not mode == 'pos_adjust' else 0.0,
             leverage)
         max_stake_amount = self.exchange.get_max_pair_stake_amount(
             pair, enter_limit_requested, leverage)
@@ -1291,12 +1291,12 @@ class FreqtradeBot(LoggingMixin):
 
     def manage_trade_stoploss_orders(self, trade: Trade, stoploss_orders: List[Dict]):
         """
-        Perform required actions acording to existing stoploss orders of trade
+        Perform required actions according to existing stoploss orders of trade
         :param trade: Corresponding Trade
         :param stoploss_orders: Current on exchange stoploss orders
         :return: None
         """
-        # If all stoploss orderd are canceled for some reason we add it again
+        # If all stoploss ordered are canceled for some reason we add it again
         canceled_sl_orders = [o for o in stoploss_orders
                               if o['status'] in ('canceled', 'cancelled')]
         if (
@@ -1945,6 +1945,9 @@ class FreqtradeBot(LoggingMixin):
 
     def _update_trade_after_fill(self, trade: Trade, order: Order) -> Trade:
         if order.status in constants.NON_OPEN_EXCHANGE_STATES:
+            strategy_safe_wrapper(
+                self.strategy.order_filled, default_retval=None)(
+                pair=trade.pair, trade=trade, order=order, current_time=datetime.now(timezone.utc))
             # If a entry order was closed, force update on stoploss on exchange
             if order.ft_order_side == trade.entry_side:
                 trade = self.cancel_stoploss_on_exchange(trade)
