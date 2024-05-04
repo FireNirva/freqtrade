@@ -1,0 +1,138 @@
+{
+    "trading_mode": "futures",
+    "new_pairs_days": 30,
+    "margin_mode": "isolated",
+    "max_open_trades": 8,
+    "stake_currency": "USDT",
+    "stake_amount": 1000,
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "timeframe": "5m",
+    "dataformat_ohlcv": "json",
+    "dry_run_wallet": 12000,
+    "cancel_open_orders_on_exit": true,
+    "order_types": {
+        "entry": "market",
+        "exit": "market",
+        "emergency_exit": "market",
+        "stoploss": "market",
+        "force_exit": "market",
+        "stoploss_on_exchange": false
+    },
+    "unfilledtimeout": {
+        "entry": 1,
+        "exit": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50,
+          "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+          }
+        },
+        "pair_whitelist": [
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        },
+        {
+            "method": "ShuffleFilter",
+            "seed": 42
+        }
+    ],
+    "bot_name": "adaptive_test",
+    "force_entry_enable": true,
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "freqai": {
+        "enabled": true,
+        "conv_width": 1,
+        "purge_old_models": 20,
+        "expiration_hours": 24,
+        "train_period_days": 60,
+        "backtest_period_days": 1,
+        "write_metrics_to_disk": true,
+        "identifier": "MewV11",
+        "fit_live_predictions_candles": 600,
+        "data_kitchen_thread_count": 10,
+        "weibull_outlier_threshold": 0.999,
+        "optuna_hyperopt": true,
+        "extra_returns_per_train": {
+            "DI_value_param1": 0,
+            "DI_value_param2": 0,
+            "DI_value_param3": 0,
+            "DI_cutoff": 2,
+            "&s-minima_sort_threshold": -2,
+            "&s-maxima_sort_threshold": 2
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "include_timeframes": [
+                "5m",
+                "15m",
+                "1h",
+                "4h",
+                "1d"
+            ],
+            "label_period_candles": 100,
+            "include_shifted_candles": 5,
+            "DI_threshold": 20,
+            "weight_factor": 0.3,
+            "indicator_periods_candles": [
+                8,
+                16,
+                32
+            ],
+            "noise_standard_deviation": 0.01,
+            "buffer_train_data_candles": 100
+        },
+        "data_split_parameters": {
+            "test_size": 0.1,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {
+            "n_estimators": 400,
+            "device": "cuda",
+            "tree_method": "hist",
+            "n_jobs": 6,
+            "verbosity": 1,
+            "alpha": 0.5,
+            "min_child_weight": 5,
+            "learning_rate": 0.1,
+            "max_depth": 6,
+            "early_stopping_rounds": 20
+        }
+    }
+}
