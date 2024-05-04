@@ -285,7 +285,7 @@ def test_edge_overrides_stoploss(limit_order, fee, caplog, mocker,
             'last': enter_price * buy_price_mult,
     })
 
-    # stoploss shoud be hit
+    # stoploss should be hit
     assert freqtrade.handle_trade(trade) is not ignore_strat_sl
     if not ignore_strat_sl:
         assert log_has_re('Exit for NEO/BTC detected. Reason: stop_loss.*', caplog)
@@ -1233,6 +1233,7 @@ def test_update_trade_state(mocker, default_conf_usdt, limit_order, is_short, ca
         order_id=order_id,
 
     ))
+    freqtrade.strategy.order_filled = MagicMock(return_value=None)
     assert not freqtrade.update_trade_state(trade, None)
     assert log_has_re(r'Orderid for trade .* is empty.', caplog)
     caplog.clear()
@@ -1243,6 +1244,7 @@ def test_update_trade_state(mocker, default_conf_usdt, limit_order, is_short, ca
     caplog.clear()
     assert not trade.has_open_orders
     assert trade.amount == order['amount']
+    assert freqtrade.strategy.order_filled.call_count == 1
 
     mocker.patch('freqtrade.freqtradebot.FreqtradeBot.get_real_amount', return_value=0.01)
     assert trade.amount == 30.0
@@ -1260,11 +1262,13 @@ def test_update_trade_state(mocker, default_conf_usdt, limit_order, is_short, ca
     limit_buy_order_usdt_new['filled'] = 0.0
     limit_buy_order_usdt_new['status'] = 'canceled'
 
+    freqtrade.strategy.order_filled = MagicMock(return_value=None)
     mocker.patch('freqtrade.freqtradebot.FreqtradeBot.get_real_amount', side_effect=ValueError)
     mocker.patch(f'{EXMS}.fetch_order', return_value=limit_buy_order_usdt_new)
     res = freqtrade.update_trade_state(trade, order_id)
     # Cancelled empty
     assert res is True
+    assert freqtrade.strategy.order_filled.call_count == 0
 
 
 @pytest.mark.parametrize("is_short", [False, True])
@@ -1394,7 +1398,7 @@ def test_update_trade_state_sell(
     assert order.status == 'open'
     freqtrade.update_trade_state(trade, trade.open_orders_ids[-1], l_order)
     assert trade.amount == l_order['amount']
-    # Wallet needs to be updated after closing a limit-sell order to reenable buying
+    # Wallet needs to be updated after closing a limit-sell order to re-enable buying
     assert wallet_mock.call_count == 1
     assert not trade.is_open
     # Order is updated by update_trade_state
@@ -3236,7 +3240,7 @@ def test_locked_pairs(default_conf_usdt, ticker_usdt, fee,
     )
     trade.close(ticker_usdt_sell_down()['bid'])
     assert freqtrade.strategy.is_pair_locked(trade.pair, side='*')
-    # Boths sides are locked
+    # Both sides are locked
     assert freqtrade.strategy.is_pair_locked(trade.pair, side='long')
     assert freqtrade.strategy.is_pair_locked(trade.pair, side='short')
 
@@ -4825,7 +4829,7 @@ def test_update_funding_fees(
     freqtrade.execute_entry('ETH/USDT', 123, is_short=is_short)
     freqtrade.execute_entry('LTC/USDT', 2.0, is_short=is_short)
     freqtrade.execute_entry('XRP/USDT', 123, is_short=is_short)
-    multipl = 1 if is_short else -1
+    multiple = 1 if is_short else -1
     trades = Trade.get_open_trades()
     assert len(trades) == 3
     for trade in trades:
@@ -4843,7 +4847,7 @@ def test_update_funding_fees(
             assert trade.funding_fees == pytest.approx(sum(
                 trade.amount *
                 mark_prices[trade.pair].iloc[1:2]['open'] *
-                funding_rates[trade.pair].iloc[1:2]['open'] * multipl
+                funding_rates[trade.pair].iloc[1:2]['open'] * multiple
             ))
 
     else:
@@ -4855,7 +4859,7 @@ def test_update_funding_fees(
             trade.amount *
             mark_prices[trade.pair].iloc[1:2]['open'] *
             funding_rates[trade.pair].iloc[1:2]['open'] *
-            multipl
+            multiple
         ))
 
 
@@ -5460,9 +5464,10 @@ def test_check_and_call_adjust_trade_position(mocker, default_conf_usdt, fee, ca
     assert freqtrade.strategy.adjust_trade_position.call_count == 1
 
     caplog.clear()
-    freqtrade.strategy.adjust_trade_position = MagicMock(return_value=(-10, 'partial_exit_c'))
+    freqtrade.strategy.adjust_trade_position = MagicMock(return_value=(-0.0005, 'partial_exit_c'))
     freqtrade.process_open_trade_positions()
     assert log_has_re(r"LIMIT_SELL has been fulfilled.*", caplog)
     assert freqtrade.strategy.adjust_trade_position.call_count == 1
     trade = Trade.get_trades(trade_filter=[Trade.id == 5]).first()
     assert trade.orders[-1].ft_order_tag == 'partial_exit_c'
+    assert trade.is_open
