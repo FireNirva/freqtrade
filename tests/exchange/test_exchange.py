@@ -1121,12 +1121,12 @@ def test_create_dry_run_order_fees(
     price_side,
     fee,
 ):
+    exchange = get_patched_exchange(mocker, default_conf)
     mocker.patch(
      f'{EXMS}.get_fee',
      side_effect=lambda symbol, taker_or_maker: 2.0 if taker_or_maker == 'taker' else 1.0
     )
     mocker.patch(f'{EXMS}._dry_is_price_crossed', return_value=price_side == 'other')
-    exchange = get_patched_exchange(mocker, default_conf)
 
     order = exchange.create_dry_run_order(
         pair='LTC/USDT',
@@ -5133,7 +5133,7 @@ def test_get_maintenance_ratio_and_amt(
     mocker.patch(f'{EXMS}.exchange_has', return_value=True)
     exchange = get_patched_exchange(mocker, default_conf, api_mock)
     exchange._leverage_tiers = leverage_tiers
-    exchange.get_maintenance_ratio_and_amt(pair, value) == (mmr, maintAmt)
+    assert exchange.get_maintenance_ratio_and_amt(pair, value) == (mmr, maintAmt)
 
 
 def test_get_max_leverage_futures(default_conf, mocker, leverage_tiers):

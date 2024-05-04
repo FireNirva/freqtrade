@@ -52,7 +52,7 @@ def pytest_configure(config):
         "markers", "longrun: mark test that is running slowly and should not be run regularly"
     )
     if not config.option.longrun:
-        setattr(config.option, 'markexpr', 'not longrun')
+        config.option.markexpr = 'not longrun'
 
 
 class FixtureScheduler(LoadScopeScheduling):
@@ -241,6 +241,7 @@ def patch_exchange(
     if api_mock:
         mocker.patch(f'{EXMS}._init_ccxt', return_value=api_mock)
     else:
+        mocker.patch(f'{EXMS}.get_fee', return_value=0.0025)
         mocker.patch(f'{EXMS}._init_ccxt', MagicMock())
         mocker.patch(f'{EXMS}.timeframes', PropertyMock(
                 return_value=['5m', '15m', '1h', '1d']))
@@ -490,10 +491,10 @@ def user_dir(mocker, tmp_path) -> Path:
 
 
 @pytest.fixture(autouse=True)
-def patch_coingekko(mocker) -> None:
+def patch_coingecko(mocker) -> None:
     """
-    Mocker to coingekko to speed up tests
-    :param mocker: mocker to patch coingekko class
+    Mocker to coingecko to speed up tests
+    :param mocker: mocker to patch coingecko class
     :return: None
     """
 

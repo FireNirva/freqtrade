@@ -44,7 +44,7 @@ from freqtrade.misc import (chunks, deep_merge_dicts, file_dump_json, file_load_
                             safe_value_fallback2)
 from freqtrade.plugins.pairlist.pairlist_helpers import expand_pairlist
 from freqtrade.util import dt_from_ts, dt_now
-from freqtrade.util.datetime_helpers import dt_humanize, dt_ts
+from freqtrade.util.datetime_helpers import dt_humanize_delta, dt_ts
 from freqtrade.util.periodic_cache import PeriodicCache
 
 
@@ -239,8 +239,8 @@ class Exchange:
         self.validate_pricing(config['exit_pricing'])
         self.validate_pricing(config['entry_pricing'])
 
-    def _init_ccxt(self, exchange_config: Dict[str, Any], ccxt_module: CcxtModuleType = ccxt,
-                   ccxt_kwargs: Dict = {}) -> ccxt.Exchange:
+    def _init_ccxt(self, exchange_config: Dict[str, Any], ccxt_module: CcxtModuleType = ccxt, *,
+                   ccxt_kwargs: Dict) -> ccxt.Exchange:
         """
         Initialize ccxt with given config and return valid
         ccxt instance.
@@ -348,10 +348,13 @@ class Exchange:
         return int(self._ft_has.get('ohlcv_candle_limit_per_timeframe', {}).get(
             timeframe, self._ft_has.get('ohlcv_candle_limit')))
 
-    def get_markets(self, base_currencies: List[str] = [], quote_currencies: List[str] = [],
-                    spot_only: bool = False, margin_only: bool = False, futures_only: bool = False,
-                    tradable_only: bool = True,
-                    active_only: bool = False) -> Dict[str, Any]:
+    def get_markets(
+            self,
+            base_currencies: Optional[List[str]] = None,
+            quote_currencies: Optional[List[str]] = None,
+            spot_only: bool = False, margin_only: bool = False, futures_only: bool = False,
+            tradable_only: bool = True,
+            active_only: bool = False) -> Dict[str, Any]:
         """
         Return exchange ccxt markets, filtered out by base currency and quote currency
         if this was requested in parameters.
@@ -848,7 +851,7 @@ class Exchange:
     # Dry-run methods
 
     def create_dry_run_order(self, pair: str, ordertype: str, side: str, amount: float,
-                             rate: float, leverage: float, params: Dict = {},
+                             rate: float, leverage: float, params: Optional[Dict] = None,
                              stop_loss: bool = False) -> Dict[str, Any]:
         now = dt_now()
         order_id = f'dry_run_{side}_{pair}_{now.timestamp()}'
@@ -1297,9 +1300,11 @@ class Exchange:
             raise OperationalException(e) from e
 
     @retrier(retries=API_FETCH_ORDER_RETRY_COUNT)
-    def fetch_order(self, order_id: str, pair: str, params: Dict = {}) -> Dict:
+    def fetch_order(self, order_id: str, pair: str, params: Optional[Dict] = None) -> Dict:
         if self._config['dry_run']:
             return self.fetch_dry_run_order(order_id)
+        if params is None:
+            params = {}
         try:
             if not self.exchange_has('fetchOrder'):
                 return self.fetch_order_emulated(order_id, pair, params)
@@ -1321,7 +1326,7 @@ class Exchange:
         except ccxt.BaseError as e:
             raise OperationalException(e) from e
 
-    def fetch_stoploss_order(self, order_id: str, pair: str, params: Dict = {}) -> Dict:
+    def fetch_stoploss_order(self, order_id: str, pair: str, params: Optional[Dict] = None) -> Dict:
         return self.fetch_order(order_id, pair, params)
 
     def fetch_order_or_stoploss_order(self, order_id: str, pair: str,
@@ -1347,7 +1352,7 @@ class Exchange:
                 and order.get('filled') == 0.0)
 
     @retrier
-    def cancel_order(self, order_id: str, pair: str, params: Dict = {}) -> Dict:
+    def cancel_order(self, order_id: str, pair: str, params: Optional[Dict] = None) -> Dict:
         if self._config['dry_run']:
             try:
                 order = self.fetch_dry_run_order(order_id)
@@ -1357,6 +1362,8 @@ class Exchange:
             except InvalidOrderException:
                 return {}
 
+        if params is None:
+            params = {}
         try:
             order = self._api.cancel_order(order_id, pair, params=params)
             self._log_exchange_response('cancel_order', order)
@@ -1373,7 +1380,8 @@ class Exchange:
         except ccxt.BaseError as e:
             raise OperationalException(e) from e
 
-    def cancel_stoploss_order(self, order_id: str, pair: str, params: Dict = {}) -> Dict:
+    def cancel_stoploss_order(
+            self, order_id: str, pair: str, params: Optional[Dict] = None) -> Dict:
         return self.cancel_order(order_id, pair, params)
 
     def is_cancel_order_result_suitable(self, corder) -> bool:
@@ -2000,7 +2008,7 @@ class Exchange:
         logger.debug(
             "one_call: %s msecs (%s)",
             one_call,
-            dt_humanize(dt_now() - timedelta(milliseconds=one_call), only_distance=True)
+            dt_humanize_delta(dt_now() - timedelta(milliseconds=one_call))
         )
         input_coroutines = [self._async_get_candle_history(
             pair, timeframe, candle_type, since) for since in
@@ -2786,7 +2794,7 @@ class Exchange:
 
     @retrier
     def set_margin_mode(self, pair: str, margin_mode: MarginMode, accept_fail: bool = False,
-                        params: dict = {}):
+                        params: Optional[Dict] = None):
         """
         Set's the margin mode on the exchange to cross or isolated for a specific pair
         :param pair: base/quote currency pair (e.g. "ADA/USDT")
@@ -2795,6 +2803,8 @@ class Exchange:
             # Some exchanges only support one margin_mode type
             return
 
+        if params is None:
+            params = {}
         try:
             res = self._api.set_margin_mode(margin_mode.value, pair, params)
             self._log_exchange_response('set_margin_mode', res)
