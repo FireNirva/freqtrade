@@ -1,0 +1,88 @@
+Result for strategy DCBBBounce
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  ETC/USDT |         3 |           1.01 |           3.03 |             0.603 |           0.60 |          2:15:00 |     3     0     0   100 |
+| ALGO/USDT |         5 |           0.34 |           1.72 |             0.332 |           0.33 | 12 days, 3:30:00 |     3     2     0   100 |
+|  XRP/USDT |         5 |           0.23 |           1.15 |             0.221 |           0.22 |          3:27:00 |     3     2     0   100 |
+|  BNB/USDT |         4 |           0.30 |           1.20 |             0.220 |           0.22 |          9:04:00 |     2     2     0   100 |
+|  DOT/USDT |         2 |           0.35 |           0.71 |             0.142 |           0.14 |          6:30:00 |     1     1     0   100 |
+|  BTC/USDT |         3 |           0.18 |           0.54 |             0.104 |           0.10 |          5:05:00 |     2     1     0   100 |
+|  ETH/USDT |         3 |           0.15 |           0.45 |             0.080 |           0.08 |         22:25:00 |     1     2     0   100 |
+| LINK/USDT |         2 |           0.19 |           0.39 |             0.077 |           0.08 |          2:15:00 |     2     0     0   100 |
+|  BCH/USDT |         1 |           0.00 |           0.00 |             0.000 |           0.00 |          2:15:00 |     0     1     0     0 |
+|  LTC/USDT |         1 |           0.00 |           0.00 |             0.000 |           0.00 |          3:15:00 |     0     1     0     0 |
+|  SOL/USDT |         1 |           0.00 |           0.00 |             0.000 |           0.00 |          2:15:00 |     0     1     0     0 |
+|  ADA/USDT |         3 |           0.00 |           0.00 |             0.000 |           0.00 |          9:20:00 |     0     3     0     0 |
+| LUNA/USDT |         9 |          -6.08 |         -54.70 |           -10.811 |         -10.81 |   1 day, 5:35:00 |     3     4     2  33.3 |
+|     TOTAL |        42 |          -1.08 |         -45.53 |            -9.031 |          -9.03 |  1 day, 21:42:00 |    20    20     2  47.6 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |        42 |          -1.08 |         -45.53 |            -9.031 |          -9.03 | 1 day, 21:42:00 |    20    20     2  47.6 |
+| TOTAL |        42 |          -1.08 |         -45.53 |            -9.031 |          -9.03 | 1 day, 21:42:00 |    20    20     2  47.6 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|                roi |      40 |     20    20     0   100 |           0.46 |          18.5  |             3.617 |           3.7  |
+| trailing_stop_loss |       2 |      0     0     2     0 |         -32.01 |         -64.03 |           -12.648 |         -12.81 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-11-27 13:00:00 |
+| Backtesting to              | 2024-02-10 19:45:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 42 / 0.02           |
+| Starting balance            | 100 USDT            |
+| Final balance               | 90.969 USDT         |
+| Absolute profit             | -9.031 USDT         |
+| Total profit %              | -9.03%              |
+| CAGR %                      | -1.80%              |
+| Sortino                     | -0.73               |
+| Sharpe                      | -0.07               |
+| Calmar                      | -0.78               |
+| Profit factor               | 0.29                |
+| Expectancy (Ratio)          | -0.22 (-0.51)       |
+| Trades per day              | 0.02                |
+| Avg. daily profit %         | -0.00%              |
+| Avg. stake amount           | 19.159 USDT         |
+| Total trade volume          | 804.681 USDT        |
+|                             |                     |
+| Best Pair                   | ETC/USDT 3.03%      |
+| Worst Pair                  | LUNA/USDT -54.70%   |
+| Best trade                  | LUNA/USDT 6.77%     |
+| Worst trade                 | LUNA/USDT -32.29%   |
+| Best day                    | 1.349 USDT          |
+| Worst day                   | -6.449 USDT         |
+| Days win/draw/lose          | 19 / 1809 / 2       |
+| Avg. Duration Winners       | 2:15:00             |
+| Avg. Duration Loser         | 4 days, 1:15:00     |
+| Max Consecutive Wins / Loss | 7 / 7               |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 90.658 USDT         |
+| Max balance                 | 102.639 USDT        |
+| Max % of account underwater | 11.67%              |
+| Absolute Drawdown (Account) | 11.67%              |
+| Absolute Drawdown           | 11.981 USDT         |
+| Drawdown high               | 2.639 USDT          |
+| Drawdown low                | -9.342 USDT         |
+| Drawdown Start              | 2022-02-21 21:15:00 |
+| Drawdown End                | 2023-03-10 10:30:00 |
+| Market change               | 1432.68%            |
+=====================================================
+
+Backtested 2018-11-27 13:00:00 -> 2024-02-10 19:45:00 | Max open trades : 5
+========================================================================= STRATEGY SUMMARY ========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |            Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+---------------------|
+| DCBBBounce |        42 |          -1.08 |         -45.53 |            -9.031 |          -9.03 | 1 day, 21:42:00 |    20    20     2  47.6 | 11.981 USDT  11.67% |
+===================================================================================================================================================================
+
+For more details, please look at the detail tables above

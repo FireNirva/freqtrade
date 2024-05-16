@@ -39,23 +39,10 @@
         "pair_whitelist": [
             "1INCH/USDT:USDT",
             "AAVE/USDT:USDT",
-            "ADA/USDT:USDT",
-            "BTC/USDT:USDT",
-            "ETH/USDT:USDT",
-            "DOT/USDT:USDT",
-            "LINK/USDT:USDT",
-            "DOGE/USDT:USDT",
             "SOL/USDT:USDT",
             "MATIC/USDT:USDT",
-            "EGLD/USDT:USDT",
-            "XLM/USDT:USDT",
-            "XRP/USDT:USDT",
-            "XMR/USDT:USDT",
-            "ZEC/USDT:USDT",
-            "AVAX/USDT:USDT",
-            "SNX/USDT:USDT",
-            "ATOM/USDT:USDT",
-            "LTC/USDT:USDT"
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT"
         ],
         "pair_blacklist": []
     },
@@ -83,7 +70,19 @@
             "seed": 42
         }
     ],
-    "bot_name": "adaptive_test",
+    "api_server": {
+    "enabled": true,
+    "listen_ip_address": "127.0.0.1",
+    "listen_port": 8090,
+    "verbosity": "error",
+    "enable_openapi": false,
+    "jwt_secret_key": "92ef742fbf2fd3893c9a8aa3330f479fae720d604e4ea6f4c10e25d9a0b46814",
+    "ws_token": "yoJ09BYSfODrynDydCwNz967SfO-FOYHNQ",
+    "CORS_origins": ["http://127.0.0.1:8080"],
+    "username": "freqtrader",
+    "password": "123"
+    },
+    "bot_name": "MewtwoV1",
     "force_entry_enable": true,
     "initial_state": "running",
     "internals": {

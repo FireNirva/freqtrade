@@ -1,0 +1,386 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 45662 entries, 0 to 45661
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 45662 non-null  datetime64[ns, UTC]
+ 1   open                 45662 non-null  float64            
+ 2   high                 45662 non-null  float64            
+ 3   low                  45662 non-null  float64            
+ 4   close                45662 non-null  float64            
+ 5   volume               45662 non-null  float64            
+ 6   date_1h              45662 non-null  datetime64[ns, UTC]
+ 7   open_1h              45662 non-null  float64            
+ 8   high_1h              45662 non-null  float64            
+ 9   low_1h               45662 non-null  float64            
+ 10  close_1h             45662 non-null  float64            
+ 11  volume_1h            45662 non-null  float64            
+ 12  upper                45642 non-null  float64            
+ 13  conversion_line      45654 non-null  float64            
+ 14  base_line            45637 non-null  float64            
+ 15  lead_1               45637 non-null  float64            
+ 16  lead_2               45611 non-null  float64            
+ 17  is_cloud_green       45662 non-null  bool               
+ 18  upper_cloud          45611 non-null  float64            
+ 19  lower_cloud          45611 non-null  float64            
+ 20  shifted_upper_cloud  45586 non-null  float64            
+ 21  shifted_lower_cloud  45586 non-null  float64            
+ 22  rsi                  45648 non-null  float64            
+ 23  srsi_k               45633 non-null  float64            
+ 24  srsi_d               45631 non-null  float64            
+ 25  enter_tag            45662 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 8.8+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 36868 entries, 0 to 36867
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 36868 non-null  datetime64[ns, UTC]
+ 1   open                 36868 non-null  float64            
+ 2   high                 36868 non-null  float64            
+ 3   low                  36868 non-null  float64            
+ 4   close                36868 non-null  float64            
+ 5   volume               36868 non-null  float64            
+ 6   date_1h              36868 non-null  datetime64[ns, UTC]
+ 7   open_1h              36868 non-null  float64            
+ 8   high_1h              36868 non-null  float64            
+ 9   low_1h               36868 non-null  float64            
+ 10  close_1h             36868 non-null  float64            
+ 11  volume_1h            36868 non-null  float64            
+ 12  upper                36848 non-null  float64            
+ 13  conversion_line      36860 non-null  float64            
+ 14  base_line            36843 non-null  float64            
+ 15  lead_1               36843 non-null  float64            
+ 16  lead_2               36817 non-null  float64            
+ 17  is_cloud_green       36868 non-null  bool               
+ 18  upper_cloud          36817 non-null  float64            
+ 19  lower_cloud          36817 non-null  float64            
+ 20  shifted_upper_cloud  36792 non-null  float64            
+ 21  shifted_lower_cloud  36792 non-null  float64            
+ 22  rsi                  36854 non-null  float64            
+ 23  srsi_k               36839 non-null  float64            
+ 24  srsi_d               36837 non-null  float64            
+ 25  enter_tag            36868 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 7.1+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 45662 entries, 0 to 45661
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 45662 non-null  datetime64[ns, UTC]
+ 1   open                 45662 non-null  float64            
+ 2   high                 45662 non-null  float64            
+ 3   low                  45662 non-null  float64            
+ 4   close                45662 non-null  float64            
+ 5   volume               45662 non-null  float64            
+ 6   date_1h              45662 non-null  datetime64[ns, UTC]
+ 7   open_1h              45662 non-null  float64            
+ 8   high_1h              45662 non-null  float64            
+ 9   low_1h               45662 non-null  float64            
+ 10  close_1h             45662 non-null  float64            
+ 11  volume_1h            45662 non-null  float64            
+ 12  upper                45642 non-null  float64            
+ 13  conversion_line      45654 non-null  float64            
+ 14  base_line            45637 non-null  float64            
+ 15  lead_1               45637 non-null  float64            
+ 16  lead_2               45611 non-null  float64            
+ 17  is_cloud_green       45662 non-null  bool               
+ 18  upper_cloud          45611 non-null  float64            
+ 19  lower_cloud          45611 non-null  float64            
+ 20  shifted_upper_cloud  45586 non-null  float64            
+ 21  shifted_lower_cloud  45586 non-null  float64            
+ 22  rsi                  45648 non-null  float64            
+ 23  srsi_k               45633 non-null  float64            
+ 24  srsi_d               45631 non-null  float64            
+ 25  enter_tag            45662 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 8.8+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 44452 entries, 0 to 44451
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 44452 non-null  datetime64[ns, UTC]
+ 1   open                 44452 non-null  float64            
+ 2   high                 44452 non-null  float64            
+ 3   low                  44452 non-null  float64            
+ 4   close                44452 non-null  float64            
+ 5   volume               44452 non-null  float64            
+ 6   date_1h              44452 non-null  datetime64[ns, UTC]
+ 7   open_1h              44452 non-null  float64            
+ 8   high_1h              44452 non-null  float64            
+ 9   low_1h               44452 non-null  float64            
+ 10  close_1h             44452 non-null  float64            
+ 11  volume_1h            44452 non-null  float64            
+ 12  upper                44432 non-null  float64            
+ 13  conversion_line      44444 non-null  float64            
+ 14  base_line            44427 non-null  float64            
+ 15  lead_1               44427 non-null  float64            
+ 16  lead_2               44401 non-null  float64            
+ 17  is_cloud_green       44452 non-null  bool               
+ 18  upper_cloud          44401 non-null  float64            
+ 19  lower_cloud          44401 non-null  float64            
+ 20  shifted_upper_cloud  44376 non-null  float64            
+ 21  shifted_lower_cloud  44376 non-null  float64            
+ 22  rsi                  44438 non-null  float64            
+ 23  srsi_k               44423 non-null  float64            
+ 24  srsi_d               44421 non-null  float64            
+ 25  enter_tag            44452 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 8.5+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 30704 entries, 0 to 30703
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 30704 non-null  datetime64[ns, UTC]
+ 1   open                 30704 non-null  float64            
+ 2   high                 30704 non-null  float64            
+ 3   low                  30704 non-null  float64            
+ 4   close                30704 non-null  float64            
+ 5   volume               30704 non-null  float64            
+ 6   date_1h              30704 non-null  datetime64[ns, UTC]
+ 7   open_1h              30704 non-null  float64            
+ 8   high_1h              30704 non-null  float64            
+ 9   low_1h               30704 non-null  float64            
+ 10  close_1h             30704 non-null  float64            
+ 11  volume_1h            30704 non-null  float64            
+ 12  upper                30684 non-null  float64            
+ 13  conversion_line      30696 non-null  float64            
+ 14  base_line            30679 non-null  float64            
+ 15  lead_1               30679 non-null  float64            
+ 16  lead_2               30653 non-null  float64            
+ 17  is_cloud_green       30704 non-null  bool               
+ 18  upper_cloud          30653 non-null  float64            
+ 19  lower_cloud          30653 non-null  float64            
+ 20  shifted_upper_cloud  30628 non-null  float64            
+ 21  shifted_lower_cloud  30628 non-null  float64            
+ 22  rsi                  30690 non-null  float64            
+ 23  srsi_k               30675 non-null  float64            
+ 24  srsi_d               30673 non-null  float64            
+ 25  enter_tag            30704 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 5.9+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 45662 entries, 0 to 45661
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 45662 non-null  datetime64[ns, UTC]
+ 1   open                 45662 non-null  float64            
+ 2   high                 45662 non-null  float64            
+ 3   low                  45662 non-null  float64            
+ 4   close                45662 non-null  float64            
+ 5   volume               45662 non-null  float64            
+ 6   date_1h              45662 non-null  datetime64[ns, UTC]
+ 7   open_1h              45662 non-null  float64            
+ 8   high_1h              45662 non-null  float64            
+ 9   low_1h               45662 non-null  float64            
+ 10  close_1h             45662 non-null  float64            
+ 11  volume_1h            45662 non-null  float64            
+ 12  upper                45642 non-null  float64            
+ 13  conversion_line      45654 non-null  float64            
+ 14  base_line            45637 non-null  float64            
+ 15  lead_1               45637 non-null  float64            
+ 16  lead_2               45611 non-null  float64            
+ 17  is_cloud_green       45662 non-null  bool               
+ 18  upper_cloud          45611 non-null  float64            
+ 19  lower_cloud          45611 non-null  float64            
+ 20  shifted_upper_cloud  45586 non-null  float64            
+ 21  shifted_lower_cloud  45586 non-null  float64            
+ 22  rsi                  45648 non-null  float64            
+ 23  srsi_k               45633 non-null  float64            
+ 24  srsi_d               45631 non-null  float64            
+ 25  enter_tag            45662 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 8.8+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 45662 entries, 0 to 45661
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 45662 non-null  datetime64[ns, UTC]
+ 1   open                 45662 non-null  float64            
+ 2   high                 45662 non-null  float64            
+ 3   low                  45662 non-null  float64            
+ 4   close                45662 non-null  float64            
+ 5   volume               45662 non-null  float64            
+ 6   date_1h              45662 non-null  datetime64[ns, UTC]
+ 7   open_1h              45662 non-null  float64            
+ 8   high_1h              45662 non-null  float64            
+ 9   low_1h               45662 non-null  float64            
+ 10  close_1h             45662 non-null  float64            
+ 11  volume_1h            45662 non-null  float64            
+ 12  upper                45642 non-null  float64            
+ 13  conversion_line      45654 non-null  float64            
+ 14  base_line            45637 non-null  float64            
+ 15  lead_1               45637 non-null  float64            
+ 16  lead_2               45611 non-null  float64            
+ 17  is_cloud_green       45662 non-null  bool               
+ 18  upper_cloud          45611 non-null  float64            
+ 19  lower_cloud          45611 non-null  float64            
+ 20  shifted_upper_cloud  45586 non-null  float64            
+ 21  shifted_lower_cloud  45586 non-null  float64            
+ 22  rsi                  45648 non-null  float64            
+ 23  srsi_k               45633 non-null  float64            
+ 24  srsi_d               45631 non-null  float64            
+ 25  enter_tag            45662 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 8.8+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 30519 entries, 0 to 30518
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 30519 non-null  datetime64[ns, UTC]
+ 1   open                 30519 non-null  float64            
+ 2   high                 30519 non-null  float64            
+ 3   low                  30519 non-null  float64            
+ 4   close                30519 non-null  float64            
+ 5   volume               30519 non-null  float64            
+ 6   date_1h              30519 non-null  datetime64[ns, UTC]
+ 7   open_1h              30519 non-null  float64            
+ 8   high_1h              30519 non-null  float64            
+ 9   low_1h               30519 non-null  float64            
+ 10  close_1h             30519 non-null  float64            
+ 11  volume_1h            30519 non-null  float64            
+ 12  upper                30499 non-null  float64            
+ 13  conversion_line      30511 non-null  float64            
+ 14  base_line            30494 non-null  float64            
+ 15  lead_1               30494 non-null  float64            
+ 16  lead_2               30468 non-null  float64            
+ 17  is_cloud_green       30519 non-null  bool               
+ 18  upper_cloud          30468 non-null  float64            
+ 19  lower_cloud          30468 non-null  float64            
+ 20  shifted_upper_cloud  30443 non-null  float64            
+ 21  shifted_lower_cloud  30443 non-null  float64            
+ 22  rsi                  30505 non-null  float64            
+ 23  srsi_k               30490 non-null  float64            
+ 24  srsi_d               30488 non-null  float64            
+ 25  enter_tag            30519 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 5.9+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 40694 entries, 0 to 40693
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype              
+---  ------               --------------  -----              
+ 0   date                 40694 non-null  datetime64[ns, UTC]
+ 1   open                 40694 non-null  float64            
+ 2   high                 40694 non-null  float64            
+ 3   low                  40694 non-null  float64            
+ 4   close                40694 non-null  float64            
+ 5   volume               40694 non-null  float64            
+ 6   date_1h              40694 non-null  datetime64[ns, UTC]
+ 7   open_1h              40694 non-null  float64            
+ 8   high_1h              40694 non-null  float64            
+ 9   low_1h               40694 non-null  float64            
+ 10  close_1h             40694 non-null  float64            
+ 11  volume_1h            40694 non-null  float64            
+ 12  upper                40674 non-null  float64            
+ 13  conversion_line      40686 non-null  float64            
+ 14  base_line            40669 non-null  float64            
+ 15  lead_1               40669 non-null  float64            
+ 16  lead_2               40643 non-null  float64            
+ 17  is_cloud_green       40694 non-null  bool               
+ 18  upper_cloud          40643 non-null  float64            
+ 19  lower_cloud          40643 non-null  float64            
+ 20  shifted_upper_cloud  40618 non-null  float64            
+ 21  shifted_lower_cloud  40618 non-null  float64            
+ 22  rsi                  40680 non-null  float64            
+ 23  srsi_k               40665 non-null  float64            
+ 24  srsi_d               40663 non-null  float64            
+ 25  enter_tag            40694 non-null  object             
+dtypes: bool(1), datetime64[ns, UTC](2), float64(22), object(1)
+memory usage: 7.8+ MB
+Result for strategy NowoIchimoku5mV2
+============================================================ BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+|  XRP/USDT |       150 |           0.82 |         122.42 |         12255.702 |         122.56 |  1 day, 7:49:00 |   116     0    34  77.3 |
+|  DOT/USDT |       108 |           1.54 |         166.48 |         10481.581 |         104.82 |        19:59:00 |    96     0    12  88.9 |
+|  SOL/USDT |       115 |           1.49 |         170.79 |         10330.644 |         103.31 |        19:43:00 |    97     0    18  84.3 |
+| ALGO/USDT |       140 |           1.41 |         197.24 |          9184.567 |          91.85 |        21:30:00 |   122     0    18  87.1 |
+|  BTC/USDT |       187 |           0.85 |         158.67 |          8714.818 |          87.15 | 2 days, 3:50:00 |   161     0    26  86.1 |
+|  ETH/USDT |       198 |           1.05 |         207.82 |          7970.506 |          79.71 |  1 day, 8:26:00 |   169     0    29  85.4 |
+| LINK/USDT |       204 |           0.66 |         134.91 |          7296.252 |          72.96 |        23:06:00 |   167     0    37  81.9 |
+|  ADA/USDT |       173 |          -0.32 |         -54.91 |         -1208.978 |         -12.09 |  1 day, 9:25:00 |   120     0    53  69.4 |
+|  BCH/USDT |       137 |          -0.30 |         -41.69 |         -1932.795 |         -19.33 |  1 day, 3:07:00 |    94     0    43  68.6 |
+|     TOTAL |      1412 |           0.75 |        1061.74 |         63092.298 |         630.92 |  1 day, 6:07:00 |  1142     0   270  80.9 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |      1412 |           0.75 |        1061.74 |         63092.298 |         630.92 | 1 day, 6:07:00 |  1142     0   270  80.9 |
+| TOTAL |      1412 |           0.75 |        1061.74 |         63092.298 |         630.92 | 1 day, 6:07:00 |  1142     0   270  80.9 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| trailing_stop_loss |    1406 |   1142     0   264  81.2 |           0.88 |        1238.3  |          72737.1  |         247.66 |
+|          stop_loss |       6 |      0     0     6     0 |         -29.43 |        -176.57 |          -9644.76 |         -35.31 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2019-01-16 00:00:00 |
+| Backtesting to              | 2024-02-11 13:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 1412 / 0.76         |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 73092.298 USDT      |
+| Absolute profit             | 63092.298 USDT      |
+| Total profit %              | 630.92%             |
+| CAGR %                      | 48.00%              |
+| Sortino                     | 1.35                |
+| Sharpe                      | 1.88                |
+| Calmar                      | 53.44               |
+| Profit factor               | 1.57                |
+| Expectancy (Ratio)          | 44.68 (0.11)        |
+| Trades per day              | 0.76                |
+| Avg. daily profit %         | 0.34%               |
+| Avg. stake amount           | 5974.367 USDT       |
+| Total trade volume          | 8435805.762 USDT    |
+|                             |                     |
+| Best Pair                   | ETH/USDT 207.82%    |
+| Worst Pair                  | ADA/USDT -54.91%    |
+| Best trade                  | XRP/USDT 35.58%     |
+| Worst trade                 | LINK/USDT -29.44%   |
+| Best day                    | 4531.612 USDT       |
+| Worst day                   | -6990.008 USDT      |
+| Days win/draw/lose          | 555 / 1132 / 166    |
+| Avg. Duration Winners       | 23:04:00            |
+| Avg. Duration Loser         | 2 days, 11:57:00    |
+| Max Consecutive Wins / Loss | 43 / 6              |
+| Rejected Entry signals      | 48                  |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9883.899 USDT       |
+| Max balance                 | 80823.301 USDT      |
+| Max % of account underwater | 30.57%              |
+| Absolute Drawdown (Account) | 12.18%              |
+| Absolute Drawdown           | 9843.545 USDT       |
+| Drawdown high               | 70823.301 USDT      |
+| Drawdown low                | 60979.756 USDT      |
+| Drawdown Start              | 2024-01-02 10:00:00 |
+| Drawdown End                | 2024-02-07 08:00:00 |
+| Market change               | 1371.77%            |
+=====================================================
+
+Backtested 2019-01-16 00:00:00 -> 2024-02-11 13:00:00 | Max open trades : 5
+============================================================================ STRATEGY SUMMARY ============================================================================
+|         Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+-----------------------|
+| NowoIchimoku5mV2 |      1412 |           0.75 |        1061.74 |         63092.298 |         630.92 | 1 day, 6:07:00 |  1142     0   270  80.9 | 9843.545 USDT  12.18% |
+==========================================================================================================================================================================
+
+For more details, please look at the detail tables above

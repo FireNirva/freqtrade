@@ -1,0 +1,83 @@
+Result for strategy AlligatorStrategy
+============================================================= BACKTESTING REPORT =============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+|  ADA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DOT/USDT |         1 |          -2.47 |          -2.47 |           -37.730 |          -0.38 | 13 days, 20:00:00 |     0     0     1     0 |
+| LINK/USDT |         1 |          -8.59 |          -8.59 |          -141.500 |          -1.42 |  10 days, 8:00:00 |     0     0     1     0 |
+|  BTC/USDT |         3 |          -3.28 |          -9.84 |          -181.974 |          -1.82 |  6 days, 12:00:00 |     1     0     2  33.3 |
+|  ETH/USDT |         3 |          -4.75 |         -14.24 |          -291.525 |          -2.92 |   7 days, 5:20:00 |     1     0     2  33.3 |
+|  BCH/USDT |         2 |          -8.16 |         -16.32 |          -292.909 |          -2.93 |  9 days, 18:00:00 |     0     0     2     0 |
+|  SOL/USDT |         2 |          -9.88 |         -19.76 |          -367.791 |          -3.68 |   1 day, 22:00:00 |     0     0     2     0 |
+|  XRP/USDT |         3 |          -8.23 |         -24.70 |          -392.460 |          -3.92 |  12 days, 8:00:00 |     0     0     3     0 |
+| ALGO/USDT |         2 |         -16.14 |         -32.28 |          -600.421 |          -6.00 |  2 days, 16:00:00 |     0     0     2     0 |
+|     TOTAL |        17 |          -7.54 |        -128.19 |         -2306.309 |         -23.06 |  7 days, 16:56:00 |     2     0    15  11.8 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+============================================================ ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| OTHER |        17 |          -7.54 |        -128.19 |         -2306.309 |         -23.06 | 7 days, 16:56:00 |     2     0    15  11.8 |
+| TOTAL |        17 |          -7.54 |        -128.19 |         -2306.309 |         -23.06 | 7 days, 16:56:00 |     2     0    15  11.8 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|   exit_signal |      17 |      2     0    15  11.8 |          -7.54 |        -128.19 |          -2306.31 |         -25.64 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2021-11-13 00:00:00 |
+| Backtesting to              | 2022-06-01 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 17 / 0.09           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 7693.691 USDT       |
+| Absolute profit             | -2306.309 USDT      |
+| Total profit %              | -23.06%             |
+| CAGR %                      | -38.03%             |
+| Sortino                     | -2.62               |
+| Sharpe                      | -1.95               |
+| Calmar                      | -9.39               |
+| Profit factor               | 0.07                |
+| Expectancy (Ratio)          | -135.67 (-0.82)     |
+| Trades per day              | 0.09                |
+| Avg. daily profit %         | -0.12%              |
+| Avg. stake amount           | 1719.115 USDT       |
+| Total trade volume          | 29224.962 USDT      |
+|                             |                     |
+| Best Pair                   | ADA/USDT 0.00%      |
+| Worst Pair                  | ALGO/USDT -32.28%   |
+| Best trade                  | ETH/USDT 8.16%      |
+| Worst trade                 | ALGO/USDT -18.88%   |
+| Best day                    | 124.886 USDT        |
+| Worst day                   | -1001.344 USDT      |
+| Days win/draw/lose          | 1 / 135 / 8         |
+| Avg. Duration Winners       | 16 days, 6:00:00    |
+| Avg. Duration Loser         | 6 days, 13:36:00    |
+| Max Consecutive Wins / Loss | 1 / 14              |
+| Rejected Entry signals      | 145                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 7568.805 USDT       |
+| Max balance                 | 9888.552 USDT       |
+| Max % of account underwater | 23.46%              |
+| Absolute Drawdown (Account) | 23.46%              |
+| Absolute Drawdown           | 2319.747 USDT       |
+| Drawdown high               | -111.448 USDT       |
+| Drawdown low                | -2431.195 USDT      |
+| Drawdown Start              | 2021-11-17 12:00:00 |
+| Drawdown End                | 2022-04-07 12:00:00 |
+| Market change               | -64.89%             |
+=====================================================
+
+Backtested 2021-11-13 00:00:00 -> 2022-06-01 00:00:00 | Max open trades : 5
+============================================================================== STRATEGY SUMMARY =============================================================================
+|          Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|-------------------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------+-----------------------|
+| AlligatorStrategy |        17 |          -7.54 |        -128.19 |         -2306.309 |         -23.06 | 7 days, 16:56:00 |     2     0    15  11.8 | 2319.747 USDT  23.46% |
+=============================================================================================================================================================================
+
+For more details, please look at the detail tables above

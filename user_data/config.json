@@ -1,6 +1,6 @@
 
 {
-    "max_open_trades": 1,
+    "max_open_trades": 2,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
@@ -70,7 +70,7 @@
     },
     "freqai": {
         "enabled": true,
-        "identifier" : "BTC_PPO_1",
+        "identifier" : "BTC_PPO_7",
         "train_period_days": 30,
         "backtest_period_days": 7,
         "purge_old_models": 2,
@@ -79,7 +79,7 @@
         "save_backtest_models": true,
         "continual_learning": true,
         "write_metrics_to_disk": true,
-        "activate_tensorboard": false,
+        "activate_tensorboard": true,
         "feature_parameters" : {
             "include_timeframes": ["5m", "15m", "1h"],
             "include_corr_pairlist": ["BTC/USDT:USDT", "ETH/USDT:USDT"],
@@ -93,19 +93,30 @@
             "test_size": 0.25
         },
         "rl_config": {
-            "train_cycles": 10,
+            "train_cycles": 100,
             "add_state_info": false,
-            "max_trade_duration_candles": 200,
-            "max_training_drawdown_pct": 0.02,
+            "max_trade_duration_candles": 12,
+            "net_arch": [1024, 1024, 512],
+            "enf_coef": 0.01,
+            "randomize_starting_position": true,
+            "max_training_drawdown_pct": 0.1,
             "model_type": "PPO",
             "policy_type": "MlpPolicy",
             "drop_ohlc_from_features": false,
+            "normalize_features": true,
             "model_reward_parameters": {
                 "rr": 1,
-                "profit_aim": 0.025
+                "profit_aim": 0.04,
+                "win_reward_factor": 10,
+                "loss_penalty_factor": 20
             },
             "progress_bar": true,
-            "cpu_count": 8
+            "force_exits": false,
+            "lr_schedule": false,
+            "tensorboard_plot": true,
+            "frame_staking": false,
+            "frame_staking_n_stack": 2,
+            "multiproc": false
         }
     }
 }

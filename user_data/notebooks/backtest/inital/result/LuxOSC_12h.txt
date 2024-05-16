@@ -1,0 +1,85 @@
+Result for strategy LuxOSC
+============================================================== BACKTESTING REPORT =============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |       Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+--------------------+-------------------------|
+|  ETH/USDT |         7 |          28.93 |         202.49 |          6288.697 |          62.89 |  53 days, 10:17:00 |     7     0     0   100 |
+|  BCH/USDT |         7 |          16.92 |         118.43 |          3229.835 |          32.30 |  67 days, 22:17:00 |     5     0     2  71.4 |
+|  XRP/USDT |         6 |          18.82 |         112.91 |          2689.043 |          26.89 |   64 days, 4:00:00 |     5     0     1  83.3 |
+|  SOL/USDT |         2 |           8.36 |          16.72 |           296.526 |           2.97 |   35 days, 6:00:00 |     1     0     1  50.0 |
+| LINK/USDT |         4 |           5.21 |          20.85 |         -1282.182 |         -12.82 |  94 days, 15:00:00 |     3     0     1  75.0 |
+| ALGO/USDT |         2 |         -32.25 |         -64.49 |         -1324.489 |         -13.24 | 121 days, 18:00:00 |     0     0     2     0 |
+|  DOT/USDT |         4 |         -17.47 |         -69.87 |         -2195.471 |         -21.95 |  98 days, 12:00:00 |     0     0     4     0 |
+|  BTC/USDT |         7 |          -1.51 |         -10.59 |         -2354.678 |         -23.55 |  98 days, 17:09:00 |     5     0     2  71.4 |
+|  ADA/USDT |         6 |          -0.25 |          -1.48 |         -2415.424 |         -24.15 |  119 days, 8:00:00 |     3     0     3  50.0 |
+|     TOTAL |        45 |           7.22 |         324.96 |          2931.857 |          29.32 |  82 days, 20:16:00 |    29     0    16  64.4 |
+========================================================= LEFT OPEN TRADES REPORT ==========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| XRP/USDT |         1 |           1.01 |           1.01 |            25.918 |           0.26 | 21 days, 0:00:00 |     1     0     0   100 |
+|    TOTAL |         1 |           1.01 |           1.01 |            25.918 |           0.26 | 21 days, 0:00:00 |     1     0     0   100 |
+============================================================ ENTER TAG STATS =============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+| OTHER |        45 |           7.22 |         324.96 |          2931.857 |          29.32 | 82 days, 20:16:00 |    29     0    16  64.4 |
+| TOTAL |        45 |           7.22 |         324.96 |          2931.857 |          29.32 | 82 days, 20:16:00 |    29     0    16  64.4 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|   exit_signal |      44 |     28     0    16  63.6 |           7.36 |         323.95 |          2905.94  |          64.79 |
+|    force_exit |       1 |      1     0     0   100 |           1.01 |           1.01 |            25.918 |           0.2  |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-12 00:00:00 |
+| Backtesting to              | 2024-02-14 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 45 / 0.02           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 12931.857 USDT      |
+| Absolute profit             | 2931.857 USDT       |
+| Total profit %              | 29.32%              |
+| CAGR %                      | 5.09%               |
+| Sortino                     | 0.03                |
+| Sharpe                      | 0.02                |
+| Calmar                      | 0.51                |
+| Profit factor               | 1.15                |
+| Expectancy (Ratio)          | 65.15 (0.05)        |
+| Trades per day              | 0.02                |
+| Avg. daily profit %         | 0.02%               |
+| Avg. stake amount           | 2964.427 USDT       |
+| Total trade volume          | 133399.22 USDT      |
+|                             |                     |
+| Best Pair                   | ETH/USDT 202.49%    |
+| Worst Pair                  | DOT/USDT -69.87%    |
+| Best trade                  | XRP/USDT 145.33%    |
+| Worst trade                 | BTC/USDT -61.73%    |
+| Best day                    | 4348.897 USDT       |
+| Worst day                   | -4419.253 USDT      |
+| Days win/draw/lose          | 24 / 1574 / 12      |
+| Avg. Duration Winners       | 45 days, 16:08:00   |
+| Avg. Duration Loser         | 150 days, 5:15:00   |
+| Max Consecutive Wins / Loss | 6 / 5               |
+| Rejected Entry signals      | 28                  |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9813.962 USDT       |
+| Max balance                 | 25776.446 USDT      |
+| Max % of account underwater | 58.36%              |
+| Absolute Drawdown (Account) | 58.36%              |
+| Absolute Drawdown           | 15043.744 USDT      |
+| Drawdown high               | 15776.446 USDT      |
+| Drawdown low                | 732.702 USDT        |
+| Drawdown Start              | 2022-02-08 12:00:00 |
+| Drawdown End                | 2023-01-13 12:00:00 |
+| Market change               | 1459.75%            |
+=====================================================
+
+Backtested 2018-12-12 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+=========================================================================== STRATEGY SUMMARY ===========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |               Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------+------------------------|
+|     LuxOSC |        45 |           7.22 |         324.96 |          2931.857 |          29.32 | 82 days, 20:16:00 |    29     0    16  64.4 | 15043.744 USDT  58.36% |
+========================================================================================================================================================================
+
+For more details, please look at the detail tables above

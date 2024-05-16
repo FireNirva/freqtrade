@@ -1,0 +1,10 @@
+PrawnstarOBV
+NASOSv5_mod3
+NASOSv5_mod1
+NASOSv4
+ElliotV8_original_ichiv2
+AlligatorStrategy
+NotAnotherSMAOffsetStrategyHOv3
+SupertrendStrategy
+Ichimoku_v32
+MAC

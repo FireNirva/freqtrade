@@ -1,0 +1,95 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy Combined_NFIv7_SMA_Rallipanos_20210707
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| ALGO/USDT |       119 |           2.68 |         318.88 |          9393.805 |          93.94 | 2 days, 13:20:00 |   113     0     6  95.0 |
+|  XRP/USDT |        88 |           0.68 |          59.48 |          2642.268 |          26.42 | 2 days, 18:23:00 |    80     0     8  90.9 |
+|  SOL/USDT |       111 |           0.67 |          74.84 |           679.361 |           6.79 |  3 days, 6:35:00 |   101     0    10  91.0 |
+| LINK/USDT |       114 |           0.59 |          66.71 |           540.641 |           5.41 |  4 days, 3:20:00 |   106     0     8  93.0 |
+|  BTC/USDT |        64 |           0.11 |           6.83 |           165.478 |           1.65 |  7 days, 4:13:00 |    53     0    11  82.8 |
+|  ETH/USDT |        92 |           0.10 |           8.92 |          -380.535 |          -3.81 | 5 days, 16:57:00 |    79     0    13  85.9 |
+|  DOT/USDT |        50 |           0.42 |          20.79 |          -612.542 |          -6.13 | 3 days, 11:22:00 |    46     0     4  92.0 |
+|  ADA/USDT |       102 |           0.08 |           8.37 |         -2225.998 |         -22.26 | 3 days, 22:16:00 |    91     0    11  89.2 |
+|  BCH/USDT |        75 |          -0.52 |         -39.00 |         -3594.150 |         -35.94 | 5 days, 15:06:00 |    66     0     9  88.0 |
+|     TOTAL |       815 |           0.65 |         525.81 |          6608.328 |          66.08 |  4 days, 3:03:00 |   735     0    80  90.2 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |       815 |           0.65 |         525.81 |          6608.328 |          66.08 | 4 days, 3:03:00 |   735     0    80  90.2 |
+| TOTAL |       815 |           0.65 |         525.81 |          6608.328 |          66.08 | 4 days, 3:03:00 |   735     0    80  90.2 |
+======================================================== EXIT REASON STATS ========================================================
+|         Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|  trailing_stop_loss |     613 |    612     0     1  99.8 |           3.43 |        2105.09 |         64535.6   |         421.02 |
+|         exit_signal |      77 |      9     0    68  11.7 |         -16.35 |       -1258.6  |        -45260.4   |        -251.72 |
+|     signal_profit_0 |      48 |     48     0     0   100 |           1.25 |          60.21 |          1756.01  |          12.04 |
+|   signal_profit_u_1 |      40 |     40     0     0   100 |           2.25 |          89.88 |          2874.17  |          17.98 |
+|   signal_profit_r_2 |      11 |     11     0     0   100 |           1.53 |          16.88 |           455.81  |           3.38 |
+| signal_stoploss_p_2 |      11 |      0     0    11     0 |         -46.54 |        -511.93 |        -18512.3   |        -102.39 |
+|   signal_profit_u_0 |       9 |      9     0     0   100 |           1.22 |          10.99 |           327.994 |           2.2  |
+|     signal_profit_1 |       6 |      6     0     0   100 |           2.22 |          13.29 |           431.394 |           2.66 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-13 16:00:00 |
+| Backtesting to              | 2024-02-11 13:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 815 / 0.43          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 16608.328 USDT      |
+| Absolute profit             | 6608.328 USDT       |
+| Total profit %              | 66.08%              |
+| CAGR %                      | 10.32%              |
+| Sortino                     | 0.09                |
+| Sharpe                      | 0.18                |
+| Calmar                      | 1.14                |
+| Profit factor               | 1.10                |
+| Expectancy (Ratio)          | 8.11 (0.01)         |
+| Trades per day              | 0.43                |
+| Avg. daily profit %         | 0.04%               |
+| Avg. stake amount           | 3035.073 USDT       |
+| Total trade volume          | 2473584.796 USDT    |
+|                             |                     |
+| Best Pair                   | ALGO/USDT 318.88%   |
+| Worst Pair                  | BCH/USDT -39.00%    |
+| Best trade                  | ALGO/USDT 67.17%    |
+| Worst trade                 | SOL/USDT -69.46%    |
+| Best day                    | 3218.501 USDT       |
+| Worst day                   | -8109.834 USDT      |
+| Days win/draw/lose          | 435 / 1386 / 60     |
+| Avg. Duration Winners       | 1 day, 10:36:00     |
+| Avg. Duration Loser         | 28 days, 19:15:00   |
+| Max Consecutive Wins / Loss | 69 / 4              |
+| Rejected Entry signals      | 254                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 6481.951 USDT       |
+| Max balance                 | 29066.226 USDT      |
+| Max % of account underwater | 58.78%              |
+| Absolute Drawdown (Account) | 58.78%              |
+| Absolute Drawdown           | 17083.96 USDT       |
+| Drawdown high               | 19066.226 USDT      |
+| Drawdown low                | 1982.266 USDT       |
+| Drawdown Start              | 2021-05-17 18:00:00 |
+| Drawdown End                | 2023-01-02 08:00:00 |
+| Market change               | 1371.77%            |
+=====================================================
+
+Backtested 2018-12-13 16:00:00 -> 2024-02-11 13:00:00 | Max open trades : 5
+======================================================================================== STRATEGY SUMMARY =======================================================================================
+|                               Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|----------------------------------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+-----------------------|
+| Combined_NFIv7_SMA_Rallipanos_20210707 |       815 |           0.65 |         525.81 |          6608.328 |          66.08 | 4 days, 3:03:00 |   735     0    80  90.2 | 17083.96 USDT  58.78% |
+=================================================================================================================================================================================================
+
+For more details, please look at the detail tables above

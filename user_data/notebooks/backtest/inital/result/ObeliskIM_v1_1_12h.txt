@@ -1,0 +1,83 @@
+Result for strategy ObeliskIM_v1_1
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  BTC/USDT |         1 |          20.18 |          20.18 |           399.873 |           4.00 | 35 days, 0:00:00 |     1     0     0   100 |
+|  BCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  ETH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+| LINK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  SOL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  XRP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  ADA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  DOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+| ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|     TOTAL |         1 |          20.18 |          20.18 |           399.873 |           4.00 | 35 days, 0:00:00 |     1     0     0   100 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+============================================================ ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| OTHER |         1 |          20.18 |          20.18 |           399.873 |           4.00 | 35 days, 0:00:00 |     1     0     0   100 |
+| TOTAL |         1 |          20.18 |          20.18 |           399.873 |           4.00 | 35 days, 0:00:00 |     1     0     0   100 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|   exit_signal |       1 |      1     0     0   100 |          20.18 |          20.18 |           399.873 |           4.04 |
+===================== SUMMARY METRICS =====================
+| Metric                      | Value                     |
+|-----------------------------+---------------------------|
+| Backtesting from            | 2019-04-20 00:00:00       |
+| Backtesting to              | 2024-02-14 00:00:00       |
+| Max open trades             | 5                         |
+|                             |                           |
+| Total/Daily Avg Trades      | 1 / 0.0                   |
+| Starting balance            | 10000 USDT                |
+| Final balance               | 10399.873 USDT            |
+| Absolute profit             | 399.873 USDT              |
+| Total profit %              | 4.00%                     |
+| CAGR %                      | 0.82%                     |
+| Sortino                     | -100.00                   |
+| Sharpe                      | -100.00                   |
+| Calmar                      | -100.00                   |
+| Profit factor               | 0.00                      |
+| Expectancy (Ratio)          | 399.87 (100.00)           |
+| Trades per day              | 0.0                       |
+| Avg. daily profit %         | 0.00%                     |
+| Avg. stake amount           | 1979.968 USDT             |
+| Total trade volume          | 1979.968 USDT             |
+|                             |                           |
+| Best Pair                   | BTC/USDT 20.18%           |
+| Worst Pair                  | BCH/USDT 0.00%            |
+| Best trade                  | BTC/USDT 20.18%           |
+| Worst trade                 | BTC/USDT 20.18%           |
+| Best day                    | 399.873 USDT              |
+| Worst day                   | 399.873 USDT              |
+| Days win/draw/lose          | 1 / 0 / 0                 |
+| Avg. Duration Winners       | 35 days, 0:00:00          |
+| Avg. Duration Loser         | 0:00:00                   |
+| Max Consecutive Wins / Loss | 1 / 0                     |
+| Rejected Entry signals      | 0                         |
+| Entry/Exit Timeouts         | 0 / 0                     |
+|                             |                           |
+| Min balance                 | 0 USDT                    |
+| Max balance                 | 0 USDT                    |
+| Max % of account underwater | 0.00%                     |
+| Absolute Drawdown (Account) | 0.00%                     |
+| Absolute Drawdown           | 0 USDT                    |
+| Drawdown high               | 0 USDT                    |
+| Drawdown low                | 0 USDT                    |
+| Drawdown Start              | 1970-01-01 00:00:00+00:00 |
+| Drawdown End                | 1970-01-01 00:00:00+00:00 |
+| Market change               | 1459.75%                  |
+===========================================================
+
+Backtested 2019-04-20 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+======================================================================== STRATEGY SUMMARY ========================================================================
+|       Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |      Drawdown |
+|----------------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------+---------------|
+| ObeliskIM_v1_1 |         1 |          20.18 |          20.18 |           399.873 |           4.00 | 35 days, 0:00:00 |     1     0     0   100 | 0 USDT  0.00% |
+==================================================================================================================================================================
+
+For more details, please look at the detail tables above

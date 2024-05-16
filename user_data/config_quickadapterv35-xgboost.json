@@ -1,0 +1,63 @@
+{
+    "freqai": {
+        "enabled": true,
+        "conv_width": 1,
+        "purge_old_models": 20,
+        "expiration_hours": 24,
+        "train_period_days": 60,
+        "backtest_period_days": 2,
+        "write_metrics_to_disk": true,
+        "identifier": "quickadapterv35-xgboost-optuna",
+        "fit_live_predictions_candles": 600,
+        "data_kitchen_thread_count": 10,
+        "weibull_outlier_threshold": 0.999,
+        "optuna_hyperopt": true,
+        "extra_returns_per_train": {
+            "DI_value_param1": 0,
+            "DI_value_param2": 0,
+            "DI_value_param3": 0,
+            "DI_cutoff": 2,
+            "&s-minima_sort_threshold": -2,
+            "&s-maxima_sort_threshold": 2
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "include_timeframes": [
+                "5m",
+                "15m",
+                "1h",
+                "4h"
+            ],
+            "label_period_candles": 100,
+            "include_shifted_candles": 5,
+            "DI_threshold": 20,
+            "weight_factor": 0.9,
+            "indicator_periods_candles": [
+                8,
+                16,
+                32
+            ],
+            "noise_standard_deviation": 0.02,
+            "buffer_train_data_candles": 100
+        },
+        "data_split_parameters": {
+            "test_size": 0.1,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {
+            "n_estimators": 150,
+            "tree_method": "gpu_hist",
+            "n_jobs": 12,
+            "verbosity": 1,
+            "alpha": 0.5,
+            "min_child_weight": 5,
+            "learning_rate": 0.1,
+            "max_depth": 6,
+            "early_stopping_rounds": 10
+        }
+    }
+}

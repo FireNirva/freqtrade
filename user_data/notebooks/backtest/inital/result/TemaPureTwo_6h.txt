@@ -1,0 +1,90 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy TemaPureTwo
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  ETH/USDT |        47 |           0.40 |          19.02 |           454.178 |           4.54 |  3 days, 8:03:00 |    41     0     6  87.2 |
+|  BTC/USDT |        56 |           0.32 |          17.85 |           304.740 |           3.05 |  4 days, 0:58:00 |    49     0     7  87.5 |
+|  SOL/USDT |        35 |          -0.05 |          -1.76 |           -23.143 |          -0.23 |  1 day, 16:27:00 |    26     0     9  74.3 |
+|  DOT/USDT |        30 |          -0.50 |         -15.04 |          -447.781 |          -4.48 |  1 day, 23:36:00 |    22     0     8  73.3 |
+| ALGO/USDT |        37 |          -0.82 |         -30.32 |          -455.619 |          -4.56 |  1 day, 15:24:00 |    27     0    10  73.0 |
+|  BCH/USDT |        36 |          -1.06 |         -38.11 |          -457.271 |          -4.57 |  3 days, 5:10:00 |    27     0     9  75.0 |
+|  ADA/USDT |        53 |          -0.50 |         -26.47 |          -629.619 |          -6.30 |  2 days, 4:25:00 |    42     0    11  79.2 |
+| LINK/USDT |        56 |          -1.06 |         -59.20 |         -1024.131 |         -10.24 |  1 day, 23:41:00 |    38     0    18  67.9 |
+|  XRP/USDT |        50 |          -2.09 |        -104.65 |         -1850.718 |         -18.51 | 3 days, 19:12:00 |    33     0    17  66.0 |
+|     TOTAL |       400 |          -0.60 |        -238.68 |         -4129.364 |         -41.29 | 2 days, 17:42:00 |   305     0    95  76.2 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+============================================================ ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| OTHER |       400 |          -0.60 |        -238.68 |         -4129.364 |         -41.29 | 2 days, 17:42:00 |   305     0    95  76.2 |
+| TOTAL |       400 |          -0.60 |        -238.68 |         -4129.364 |         -41.29 | 2 days, 17:42:00 |   305     0    95  76.2 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |     305 |    305     0     0   100 |           2.67 |         815.25 |         13763.2   |         163.05 |
+|     stop_loss |      93 |      0     0    93     0 |         -11.16 |       -1037.76 |        -17686.6   |        -207.55 |
+|   exit_signal |       2 |      0     0     2     0 |          -8.09 |         -16.17 |          -205.909 |          -3.23 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-11-27 00:00:00 |
+| Backtesting to              | 2024-02-14 12:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 400 / 0.21          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 5870.636 USDT       |
+| Absolute profit             | -4129.364 USDT      |
+| Total profit %              | -41.29%             |
+| CAGR %                      | -9.70%              |
+| Sortino                     | -1.38               |
+| Sharpe                      | -0.36               |
+| Calmar                      | -0.95               |
+| Profit factor               | 0.77                |
+| Expectancy (Ratio)          | -10.32 (-0.05)      |
+| Trades per day              | 0.21                |
+| Avg. daily profit %         | -0.02%              |
+| Avg. stake amount           | 1641.1 USDT         |
+| Total trade volume          | 656439.832 USDT     |
+|                             |                     |
+| Best Pair                   | ETH/USDT 19.02%     |
+| Worst Pair                  | XRP/USDT -104.65%   |
+| Best trade                  | ADA/USDT 12.59%     |
+| Worst trade                 | ETH/USDT -11.18%    |
+| Best day                    | 582.668 USDT        |
+| Worst day                   | -608.486 USDT       |
+| Days win/draw/lose          | 206 / 1587 / 75     |
+| Avg. Duration Winners       | 2 days, 8:19:00     |
+| Avg. Duration Loser         | 3 days, 23:49:00    |
+| Max Consecutive Wins / Loss | 31 / 7              |
+| Rejected Entry signals      | 13                  |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 5781.58 USDT        |
+| Max balance                 | 10274.09 USDT       |
+| Max % of account underwater | 43.73%              |
+| Absolute Drawdown (Account) | 43.73%              |
+| Absolute Drawdown           | 4492.509 USDT       |
+| Drawdown high               | 274.09 USDT         |
+| Drawdown low                | -4218.42 USDT       |
+| Drawdown Start              | 2021-02-19 12:00:00 |
+| Drawdown End                | 2024-01-06 06:00:00 |
+| Market change               | 1429.51%            |
+=====================================================
+
+Backtested 2018-11-27 00:00:00 -> 2024-02-14 12:00:00 | Max open trades : 5
+=========================================================================== STRATEGY SUMMARY ==========================================================================
+|    Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|-------------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------+-----------------------|
+| TemaPureTwo |       400 |          -0.60 |        -238.68 |         -4129.364 |         -41.29 | 2 days, 17:42:00 |   305     0    95  76.2 | 4492.509 USDT  43.73% |
+=======================================================================================================================================================================
+
+For more details, please look at the detail tables above

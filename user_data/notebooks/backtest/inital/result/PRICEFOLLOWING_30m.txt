@@ -1,0 +1,85 @@
+Result for strategy PRICEFOLLOWING
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  DOT/USDT |         6 |           1.69 |          10.17 |           190.446 |           1.90 | 2 days, 13:10:00 |     6     0     0   100 |
+|  BCH/USDT |         4 |           2.04 |           8.15 |           154.260 |           1.54 |         17:52:00 |     4     0     0   100 |
+|  XRP/USDT |         7 |           0.13 |           0.88 |             6.168 |           0.06 |         20:39:00 |     6     0     1  85.7 |
+| LINK/USDT |         7 |          -0.01 |          -0.09 |            -1.746 |          -0.02 |         13:09:00 |     6     0     1  85.7 |
+|  ETH/USDT |         5 |          -0.52 |          -2.58 |           -54.130 |          -0.54 |   1 day, 3:36:00 |     4     0     1  80.0 |
+| ALGO/USDT |         4 |          -1.78 |          -7.11 |          -141.769 |          -1.42 |          6:52:00 |     3     0     1  75.0 |
+|  ADA/USDT |         3 |          -3.01 |          -9.02 |          -173.762 |          -1.74 |         22:00:00 |     2     0     1  66.7 |
+|  SOL/USDT |         1 |         -10.18 |         -10.18 |          -194.783 |          -1.95 |         14:30:00 |     0     0     1     0 |
+|  BTC/USDT |         4 |          -4.33 |         -17.33 |          -325.564 |          -3.26 |  1 day, 23:52:00 |     2     0     2  50.0 |
+|     TOTAL |        41 |          -0.66 |         -27.11 |          -540.880 |          -5.41 |   1 day, 3:08:00 |    33     0     8  80.5 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |        41 |          -0.66 |         -27.11 |          -540.880 |          -5.41 | 1 day, 3:08:00 |    33     0     8  80.5 |
+| TOTAL |        41 |          -0.66 |         -27.11 |          -540.880 |          -5.41 | 1 day, 3:08:00 |    33     0     8  80.5 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |      20 |     20     0     0   100 |           2.5  |          49.95 |           945.565 |           9.99 |
+|   exit_signal |      13 |     13     0     0   100 |           0.33 |           4.25 |            80.015 |           0.85 |
+|     stop_loss |       8 |      0     0     8     0 |         -10.16 |         -81.31 |         -1566.46  |         -16.26 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-11-27 07:30:00 |
+| Backtesting to              | 2024-02-14 20:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 41 / 0.02           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 9459.12 USDT        |
+| Absolute profit             | -540.88 USDT        |
+| Total profit %              | -5.41%              |
+| CAGR %                      | -1.06%              |
+| Sortino                     | -1.36               |
+| Sharpe                      | -0.06               |
+| Calmar                      | -0.64               |
+| Profit factor               | 0.65                |
+| Expectancy (Ratio)          | -13.19 (-0.07)      |
+| Trades per day              | 0.02                |
+| Avg. daily profit %         | -0.00%              |
+| Avg. stake amount           | 1892.616 USDT       |
+| Total trade volume          | 77597.267 USDT      |
+|                             |                     |
+| Best Pair                   | DOT/USDT 10.17%     |
+| Worst Pair                  | BTC/USDT -17.33%    |
+| Best trade                  | XRP/USDT 2.50%      |
+| Worst trade                 | ETH/USDT -10.18%    |
+| Best day                    | 49.74 USDT          |
+| Worst day                   | -203.673 USDT       |
+| Days win/draw/lose          | 32 / 1736 / 8       |
+| Avg. Duration Winners       | 1 day, 4:32:00      |
+| Avg. Duration Loser         | 21:22:00            |
+| Max Consecutive Wins / Loss | 10 / 2              |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9248.062 USDT       |
+| Max balance                 | 10099.24 USDT       |
+| Max % of account underwater | 8.43%               |
+| Absolute Drawdown (Account) | 8.43%               |
+| Absolute Drawdown           | 851.179 USDT        |
+| Drawdown high               | 99.24 USDT          |
+| Drawdown low                | -751.938 USDT       |
+| Drawdown Start              | 2019-04-22 04:00:00 |
+| Drawdown End                | 2022-11-09 18:30:00 |
+| Market change               | 1416.53%            |
+=====================================================
+
+Backtested 2018-11-27 07:30:00 -> 2024-02-14 20:00:00 | Max open trades : 5
+========================================================================== STRATEGY SUMMARY ==========================================================================
+|       Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |            Drawdown |
+|----------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+---------------------|
+| PRICEFOLLOWING |        41 |          -0.66 |         -27.11 |          -540.880 |          -5.41 | 1 day, 3:08:00 |    33     0     8  80.5 | 851.179 USDT  8.43% |
+======================================================================================================================================================================
+
+For more details, please look at the detail tables above

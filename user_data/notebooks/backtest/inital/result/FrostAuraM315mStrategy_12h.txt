@@ -1,0 +1,85 @@
+Result for strategy FrostAuraM315mStrategy
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  SOL/USDT |        11 |           2.19 |          24.05 |           429.038 |           4.29 |   1 day, 9:49:00 |     3     8     0   100 |
+| LINK/USDT |        18 |           1.03 |          18.57 |           317.440 |           3.17 |         18:00:00 |     8    10     0   100 |
+|  DOT/USDT |         8 |           1.20 |           9.57 |           152.605 |           1.53 |   1 day, 6:00:00 |     3     5     0   100 |
+|  BCH/USDT |        21 |           0.34 |           7.08 |           114.921 |           1.15 |  1 day, 22:51:00 |     6    15     0   100 |
+|  ADA/USDT |        22 |          -1.25 |         -27.54 |          -482.446 |          -4.82 | 2 days, 14:11:00 |     5    16     1  22.7 |
+|  BTC/USDT |        19 |          -1.50 |         -28.58 |          -497.060 |          -4.97 |  9 days, 2:32:00 |     4    14     1  21.1 |
+|  ETH/USDT |        20 |          -1.94 |         -38.88 |          -670.194 |          -6.70 |  4 days, 6:36:00 |     3    15     2  15.0 |
+|  XRP/USDT |        23 |          -1.44 |         -33.16 |          -696.167 |          -6.96 |  8 days, 2:05:00 |     4    18     1  17.4 |
+| ALGO/USDT |        11 |          -4.96 |         -54.60 |         -1135.693 |         -11.36 | 3 days, 19:38:00 |     4     5     2  36.4 |
+|     TOTAL |       153 |          -0.81 |        -123.48 |         -2467.555 |         -24.68 |  4 days, 1:48:00 |    40   106     7  26.1 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |       153 |          -0.81 |        -123.48 |         -2467.555 |         -24.68 | 4 days, 1:48:00 |    40   106     7  26.1 |
+| TOTAL |       153 |          -0.81 |        -123.48 |         -2467.555 |         -24.68 | 4 days, 1:48:00 |    40   106     7  26.1 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |     146 |     40   106     0   100 |           0.87 |         127    |          2118.53  |          25.4  |
+|     stop_loss |       6 |      0     0     6     0 |         -41.21 |        -247.26 |         -4537.98  |         -49.45 |
+|   exit_signal |       1 |      0     0     1     0 |          -3.22 |          -3.22 |           -48.111 |          -0.64 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-12 00:00:00 |
+| Backtesting to              | 2024-02-14 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 153 / 0.08          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 7532.445 USDT       |
+| Absolute profit             | -2467.555 USDT      |
+| Total profit %              | -24.68%             |
+| CAGR %                      | -5.33%              |
+| Sortino                     | -0.10               |
+| Sharpe                      | -0.16               |
+| Calmar                      | -0.90               |
+| Profit factor               | 0.46                |
+| Expectancy (Ratio)          | -16.13 (-0.72)      |
+| Trades per day              | 0.08                |
+| Avg. daily profit %         | -0.01%              |
+| Avg. stake amount           | 1698.862 USDT       |
+| Total trade volume          | 259925.931 USDT     |
+|                             |                     |
+| Best Pair                   | SOL/USDT 24.05%     |
+| Worst Pair                  | ALGO/USDT -54.60%   |
+| Best trade                  | ALGO/USDT 18.40%    |
+| Worst trade                 | BTC/USDT -41.23%    |
+| Best day                    | 335.829 USDT        |
+| Worst day                   | -825.927 USDT       |
+| Days win/draw/lose          | 28 / 1810 / 7       |
+| Avg. Duration Winners       | 11:24:00            |
+| Avg. Duration Loser         | 54 days, 8:34:00    |
+| Max Consecutive Wins / Loss | 4 / 14              |
+| Rejected Entry signals      | 5                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 7302.751 USDT       |
+| Max balance                 | 10113.75 USDT       |
+| Max % of account underwater | 27.79%              |
+| Absolute Drawdown (Account) | 27.79%              |
+| Absolute Drawdown           | 2810.999 USDT       |
+| Drawdown high               | 113.75 USDT         |
+| Drawdown low                | -2697.249 USDT      |
+| Drawdown Start              | 2019-09-20 00:00:00 |
+| Drawdown End                | 2022-11-09 12:00:00 |
+| Market change               | 1459.75%            |
+=====================================================
+
+Backtested 2018-12-12 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+================================================================================ STRATEGY SUMMARY ===============================================================================
+|               Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+-----------------------|
+| FrostAuraM315mStrategy |       153 |          -0.81 |        -123.48 |         -2467.555 |         -24.68 | 4 days, 1:48:00 |    40   106     7  26.1 | 2810.999 USDT  27.79% |
+=================================================================================================================================================================================
+
+For more details, please look at the detail tables above

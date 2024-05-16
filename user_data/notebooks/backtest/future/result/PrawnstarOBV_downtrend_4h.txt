@@ -1,0 +1,94 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy PrawnstarOBV
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  ADA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  DOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+| ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  XRP/USDT |         1 |         -15.17 |         -15.17 |          -300.527 |          -3.01 | 13 days, 0:00:00 |     0     0     1     0 |
+|  SOL/USDT |        99 |          -0.15 |         -15.20 |          -372.826 |          -3.73 |  1 day, 18:38:00 |    73     0    26  73.7 |
+|  BTC/USDT |        32 |          -0.89 |         -28.50 |          -669.562 |          -6.70 | 5 days, 23:30:00 |    23     0     9  71.9 |
+| LINK/USDT |       102 |          -0.22 |         -22.18 |          -781.364 |          -7.81 |  1 day, 18:33:00 |    75     0    27  73.5 |
+|  ETH/USDT |        60 |          -0.84 |         -50.41 |         -1068.844 |         -10.69 |  3 days, 4:00:00 |    43     0    17  71.7 |
+|  BCH/USDT |        54 |          -0.87 |         -47.00 |         -1137.139 |         -11.37 | 3 days, 12:49:00 |    38     0    16  70.4 |
+|     TOTAL |       348 |          -0.51 |        -178.45 |         -4330.261 |         -43.30 | 2 days, 16:57:00 |   252     0    96  72.4 |
+========================================================= LEFT OPEN TRADES REPORT =========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| BTC/USDT |         1 |           0.01 |           0.01 |             0.115 |           0.00 |  1 day, 0:00:00 |     1     0     0   100 |
+| SOL/USDT |         1 |          -2.91 |          -2.91 |           -31.081 |          -0.31 | 1 day, 16:00:00 |     0     0     1     0 |
+| ETH/USDT |         1 |          -3.04 |          -3.04 |           -33.944 |          -0.34 |  1 day, 0:00:00 |     0     0     1     0 |
+|    TOTAL |         3 |          -1.98 |          -5.94 |           -64.910 |          -0.65 |  1 day, 5:20:00 |     1     0     2  33.3 |
+============================================================ ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| OTHER |       348 |          -0.51 |        -178.45 |         -4330.261 |         -43.30 | 2 days, 16:57:00 |   252     0    96  72.4 |
+| TOTAL |       348 |          -0.51 |        -178.45 |         -4330.261 |         -43.30 | 2 days, 16:57:00 |   252     0    96  72.4 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| trailing_stop_loss |     250 |    250     0     0   100 |           5.01 |        1252.81 |         17201.2   |         250.56 |
+|          stop_loss |      94 |      0     0    94     0 |         -15.17 |       -1425.55 |        -21471     |        -285.11 |
+|         force_exit |       3 |      1     0     2  33.3 |          -1.98 |          -5.94 |           -64.91  |          -1.19 |
+|                roi |       1 |      1     0     0   100 |           0.23 |           0.23 |             4.477 |           0.05 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2021-11-13 00:00:00 |
+| Backtesting to              | 2022-06-01 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 348 / 1.74          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 5669.739 USDT       |
+| Absolute profit             | -4330.261 USDT      |
+| Total profit %              | -43.30%             |
+| CAGR %                      | -64.50%             |
+| Sortino                     | -8.28               |
+| Sharpe                      | -3.06               |
+| Calmar                      | -7.56               |
+| Profit factor               | 0.80                |
+| Expectancy (Ratio)          | -12.44 (-0.06)      |
+| Trades per day              | 1.74                |
+| Avg. daily profit %         | -0.22%              |
+| Avg. stake amount           | 1403.755 USDT       |
+| Total trade volume          | 488506.602 USDT     |
+|                             |                     |
+| Best Pair                   | ADA/USDT 0.00%      |
+| Worst Pair                  | ETH/USDT -50.41%    |
+| Best trade                  | SOL/USDT 16.36%     |
+| Worst trade                 | ETH/USDT -15.17%    |
+| Best day                    | 713.996 USDT        |
+| Worst day                   | -1298.96 USDT       |
+| Days win/draw/lose          | 79 / 80 / 42        |
+| Avg. Duration Winners       | 1 day, 17:05:00     |
+| Avg. Duration Loser         | 5 days, 7:38:00     |
+| Max Consecutive Wins / Loss | 39 / 12             |
+| Rejected Entry signals      | 4779                |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 4614.906 USDT       |
+| Max balance                 | 10187.878 USDT      |
+| Max % of account underwater | 54.70%              |
+| Absolute Drawdown (Account) | 54.70%              |
+| Absolute Drawdown           | 5572.971 USDT       |
+| Drawdown high               | 187.878 USDT        |
+| Drawdown low                | -5385.094 USDT      |
+| Drawdown Start              | 2021-11-15 08:00:00 |
+| Drawdown End                | 2022-05-12 04:00:00 |
+| Market change               | -70.42%             |
+=====================================================
+
+Backtested 2021-11-13 00:00:00 -> 2022-06-01 00:00:00 | Max open trades : 5
+=========================================================================== STRATEGY SUMMARY ===========================================================================
+|     Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|--------------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------+-----------------------|
+| PrawnstarOBV |       348 |          -0.51 |        -178.45 |         -4330.261 |         -43.30 | 2 days, 16:57:00 |   252     0    96  72.4 | 5572.971 USDT  54.70% |
+========================================================================================================================================================================
+
+For more details, please look at the detail tables above

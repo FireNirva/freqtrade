@@ -1,0 +1,7 @@
+Strategy Name,Number of Trades,Average Profit %,Total Profit %,Net Profit USDT,Net Profit %,Average Duration,Win/Draw/Loss Win%,Drawdown,Sharpe
+AlligatorStrategy,33,48.41,1597.49,36057.026,360.57,20 days 9:42:00,16     0    17  48.5,1216.002 USDT  12.48%,1.17
+ElliotV8_original_ichiv2,372,1.09,404.08,11029.228,110.29,19:22:00,338     0    34  90.9,4486.186 USDT  21.27%,6.62
+Ichimoku_v32,12,186.68,2240.17,43568.174,435.68,71 days 7:40:00,8     0     4  66.7,686.764 USDT  7.04%,0.63
+NotAnotherSMAOffsetStrategyHOv3,305,1.09,333.22,8248.282,82.48,22:00:00,265     0    40  86.9,5077.625 USDT  24.13%,4.53
+PrawnstarOBV,656,1.03,676.77,19747.407,197.47,1 day 8:35:00,469     0   187  71.5,8699.501 USDT  27.39%,6.78
+SupertrendStrategy,63,16.66,1049.35,22622.042,226.22,11 days 8:34:00,19     0    44  30.2,2965.552 USDT  30.32%,1.48

@@ -1,0 +1,10 @@
+MACDCCI
+TemaMaster3
+PrawnstarOBV
+BbandRsiRolling
+ADX_15M_USDT
+FiexedRiskRewardLoss
+Ichimoku
+ONUR
+CustomStoplossWithPSAR
+HourBasedStrategy

@@ -1,0 +1,94 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy GodStraNew
+============================================================== BACKTESTING REPORT ==============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |        Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+---------------------+-------------------------|
+|  ETH/USDT |         1 |        2230.89 |        2230.89 |         44215.642 |         442.16 | 1903 days, 15:00:00 |     1     0     0   100 |
+|  ADA/USDT |         1 |        1272.76 |        1272.76 |         25225.800 |         252.26 | 1902 days, 23:30:00 |     1     0     0   100 |
+|  BTC/USDT |         1 |        1129.12 |        1129.12 |         22378.933 |         223.79 | 1903 days, 15:00:00 |     1     0     0   100 |
+| LINK/USDT |         2 |          62.46 |         124.93 |          2447.160 |          24.47 |   66 days, 12:15:00 |     1     0     1  50.0 |
+|  DOT/USDT |         1 |          70.26 |          70.26 |          1733.242 |          17.33 |  1255 days, 2:00:00 |     1     0     0   100 |
+|  XRP/USDT |         1 |          70.39 |          70.39 |          1332.733 |          13.33 | 1739 days, 16:00:00 |     1     0     0   100 |
+|  BCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |                0:00 |     0     0     0     0 |
+|  SOL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |                0:00 |     0     0     0     0 |
+| ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |                0:00 |     0     0     0     0 |
+|     TOTAL |         7 |         699.76 |        4898.35 |         97333.510 |         973.34 | 1262 days, 13:43:00 |     6     0     1  85.7 |
+=========================================================== LEFT OPEN TRADES REPORT ===========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |        Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+-------------------+----------------+---------------------+-------------------------|
+| ETH/USDT |         1 |        2230.89 |        2230.89 |         44215.642 |         442.16 | 1903 days, 15:00:00 |     1     0     0   100 |
+| ADA/USDT |         1 |        1272.76 |        1272.76 |         25225.800 |         252.26 | 1902 days, 23:30:00 |     1     0     0   100 |
+| BTC/USDT |         1 |        1129.12 |        1129.12 |         22378.933 |         223.79 | 1903 days, 15:00:00 |     1     0     0   100 |
+| DOT/USDT |         1 |          70.26 |          70.26 |          1733.242 |          17.33 |  1255 days, 2:00:00 |     1     0     0   100 |
+| XRP/USDT |         1 |          70.39 |          70.39 |          1332.733 |          13.33 | 1739 days, 16:00:00 |     1     0     0   100 |
+|    TOTAL |         5 |         954.68 |        4773.42 |         94886.350 |         948.86 | 1740 days, 23:54:00 |     5     0     0   100 |
+============================================================= ENTER TAG STATS ==============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |        Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+---------------------+-------------------------|
+| OTHER |         7 |         699.76 |        4898.35 |         97333.510 |         973.34 | 1262 days, 13:43:00 |     6     0     1  85.7 |
+| TOTAL |         7 |         699.76 |        4898.35 |         97333.510 |         973.34 | 1262 days, 13:43:00 |     6     0     1  85.7 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|    force_exit |       5 |      5     0     0   100 |         954.68 |        4773.42 |          94886.4  |         954.68 |
+|   exit_signal |       2 |      1     0     1  50.0 |          62.46 |         124.93 |           2447.16 |          24.99 |
+===================== SUMMARY METRICS =====================
+| Metric                      | Value                     |
+|-----------------------------+---------------------------|
+| Backtesting from            | 2018-11-27 00:00:00       |
+| Backtesting to              | 2024-02-14 20:00:00       |
+| Max open trades             | 5                         |
+|                             |                           |
+| Total/Daily Avg Trades      | 7 / 0.0                   |
+| Starting balance            | 10000 USDT                |
+| Final balance               | 107333.51 USDT            |
+| Absolute profit             | 97333.51 USDT             |
+| Total profit %              | 973.34%                   |
+| CAGR %                      | 57.58%                    |
+| Sortino                     | -100.00                   |
+| Sharpe                      | 0.06                      |
+| Calmar                      | -100.00                   |
+| Profit factor               | 874.22                    |
+| Expectancy (Ratio)          | 13904.79 (124.75)         |
+| Trades per day              | 0.0                       |
+| Avg. daily profit %         | 0.51%                     |
+| Avg. stake amount           | 2033.411 USDT             |
+| Total trade volume          | 14233.88 USDT             |
+|                             |                           |
+| Best Pair                   | ETH/USDT 2230.89%         |
+| Worst Pair                  | BCH/USDT 0.00%            |
+| Best trade                  | ETH/USDT 2230.89%         |
+| Worst trade                 | LINK/USDT -5.62%          |
+| Best day                    | 94886.35 USDT             |
+| Worst day                   | -111.465 USDT             |
+| Days win/draw/lose          | 2 / 1818 / 1              |
+| Avg. Duration Winners       | 1467 days, 16:10:00       |
+| Avg. Duration Loser         | 31 days, 23:00:00         |
+| Max Consecutive Wins / Loss | 6 / 1                     |
+| Rejected Entry signals      | 148                       |
+| Entry/Exit Timeouts         | 0 / 0                     |
+|                             |                           |
+| Min balance                 | 0 USDT                    |
+| Max balance                 | 0 USDT                    |
+| Max % of account underwater | 0.00%                     |
+| Absolute Drawdown (Account) | 0.00%                     |
+| Absolute Drawdown           | 0 USDT                    |
+| Drawdown high               | 0 USDT                    |
+| Drawdown low                | 0 USDT                    |
+| Drawdown Start              | 1970-01-01 00:00:00+00:00 |
+| Drawdown End                | 1970-01-01 00:00:00+00:00 |
+| Market change               | 1416.53%                  |
+===========================================================
+
+Backtested 2018-11-27 00:00:00 -> 2024-02-14 20:00:00 | Max open trades : 5
+======================================================================== STRATEGY SUMMARY =======================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |        Avg Duration |   Win  Draw  Loss  Win% |      Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+---------------------+-------------------------+---------------|
+| GodStraNew |         7 |         699.76 |        4898.35 |         97333.510 |         973.34 | 1262 days, 13:43:00 |     6     0     1  85.7 | 0 USDT  0.00% |
+=================================================================================================================================================================
+
+For more details, please look at the detail tables above

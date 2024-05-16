@@ -26,7 +26,7 @@ class PrawnstarOBV_v3(IStrategy):
     # Strategy interface version - allow new iterations of the strategy interface.
     # Check the documentation or the Sample strategy to get the latest version.
     INTERFACE_VERSION = 3
-    LEVERAGE = 3.0
+    LEVERAGE = 1
 
     # Optimal timeframe for the strategy
     timeframe = '4h'

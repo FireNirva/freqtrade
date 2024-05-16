@@ -1,0 +1,95 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy ActionZone
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  ETH/USDT |       225 |           1.42 |         319.69 |          1063.491 |          10.63 | 3 days, 10:29:00 |    74     0   151  32.9 |
+|  ADA/USDT |       155 |           2.27 |         351.63 |          1040.591 |          10.41 | 3 days, 13:54:00 |    48     0   107  31.0 |
+| LINK/USDT |       180 |           1.45 |         260.81 |           676.560 |           6.77 |  3 days, 8:20:00 |    59     0   121  32.8 |
+|  BTC/USDT |       215 |           0.76 |         163.21 |           656.989 |           6.57 | 3 days, 10:48:00 |    67     0   148  31.2 |
+|  XRP/USDT |       153 |           0.93 |         143.00 |           430.059 |           4.30 |  3 days, 6:38:00 |    41     0   112  26.8 |
+|  BCH/USDT |       149 |           0.44 |          65.21 |           314.298 |           3.14 | 2 days, 21:59:00 |    40     0   109  26.8 |
+|  SOL/USDT |       107 |           4.17 |         446.42 |           238.560 |           2.39 | 3 days, 17:30:00 |    37     0    70  34.6 |
+| ALGO/USDT |       119 |           0.15 |          17.78 |           160.598 |           1.61 |  3 days, 0:21:00 |    36     0    83  30.3 |
+|  DOT/USDT |        90 |           1.18 |         105.78 |            25.433 |           0.25 |  3 days, 7:00:00 |    28     0    62  31.1 |
+|     TOTAL |      1393 |           1.34 |        1873.54 |          4606.579 |          46.07 |  3 days, 8:19:00 |   430     0   963  30.9 |
+========================================================== LEFT OPEN TRADES REPORT ==========================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  ETH/USDT |         1 |          18.86 |          18.86 |           180.255 |           1.80 |  8 days, 6:00:00 |     1     0     0   100 |
+|  BTC/USDT |         1 |          19.16 |          19.16 |           138.437 |           1.38 | 7 days, 18:00:00 |     1     0     0   100 |
+|  BCH/USDT |         1 |          14.71 |          14.71 |            41.688 |           0.42 | 5 days, 18:00:00 |     1     0     0   100 |
+| ALGO/USDT |         1 |           8.23 |           8.23 |            14.722 |           0.15 | 6 days, 12:00:00 |     1     0     0   100 |
+| LINK/USDT |         1 |          -1.12 |          -1.12 |            -0.993 |          -0.01 |  2 days, 0:00:00 |     0     0     1     0 |
+|     TOTAL |         5 |          11.97 |          59.83 |           374.109 |           3.74 |  6 days, 1:12:00 |     4     0     1  80.0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |      1393 |           1.34 |        1873.54 |          4606.579 |          46.07 | 3 days, 8:19:00 |   430     0   963  30.9 |
+| TOTAL |      1393 |           1.34 |        1873.54 |          4606.579 |          46.07 | 3 days, 8:19:00 |   430     0   963  30.9 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| trailing_stop_loss |    1295 |    426     0   869  32.9 |           1.7  |        2206.1  |          4814.26  |         441.22 |
+|        exit_signal |      93 |      0     0    93     0 |          -4.22 |        -392.39 |          -581.79  |         -78.48 |
+|         force_exit |       5 |      4     0     1  80.0 |          11.97 |          59.83 |           374.109 |          11.97 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-04 12:00:00 |
+| Backtesting to              | 2024-02-14 12:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 1393 / 0.73         |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 14606.579 USDT      |
+| Absolute profit             | 4606.579 USDT       |
+| Total profit %              | 46.07%              |
+| CAGR %                      | 7.56%               |
+| Sortino                     | 7.10                |
+| Sharpe                      | 1.35                |
+| Calmar                      | 8.49                |
+| Profit factor               | 1.62                |
+| Expectancy (Ratio)          | 3.31 (0.43)         |
+| Trades per day              | 0.73                |
+| Avg. daily profit %         | 0.02%               |
+| Avg. stake amount           | 286.023 USDT        |
+| Total trade volume          | 398429.989 USDT     |
+|                             |                     |
+| Best Pair                   | SOL/USDT 446.42%    |
+| Worst Pair                  | ALGO/USDT 17.78%    |
+| Best trade                  | BCH/USDT 153.37%    |
+| Worst trade                 | XRP/USDT -21.47%    |
+| Best day                    | 546.465 USDT        |
+| Worst day                   | -87.084 USDT        |
+| Days win/draw/lose          | 217 / 1204 / 457    |
+| Avg. Duration Winners       | 6 days, 22:00:00    |
+| Avg. Duration Loser         | 1 day, 18:04:00     |
+| Max Consecutive Wins / Loss | 8 / 27              |
+| Rejected Entry signals      | 4822                |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9863.955 USDT       |
+| Max balance                 | 14718.18 USDT       |
+| Max % of account underwater | 5.46%               |
+| Absolute Drawdown (Account) | 5.46%               |
+| Absolute Drawdown           | 803.927 USDT        |
+| Drawdown high               | 4718.18 USDT        |
+| Drawdown low                | 3914.253 USDT       |
+| Drawdown Start              | 2021-11-09 12:00:00 |
+| Drawdown End                | 2023-01-18 00:00:00 |
+| Market change               | 1429.51%            |
+=====================================================
+
+Backtested 2018-12-04 12:00:00 -> 2024-02-14 12:00:00 | Max open trades : 5
+========================================================================= STRATEGY SUMMARY ========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |            Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+---------------------|
+| ActionZone |      1393 |           1.34 |        1873.54 |          4606.579 |          46.07 | 3 days, 8:19:00 |   430     0   963  30.9 | 803.927 USDT  5.46% |
+===================================================================================================================================================================
+
+For more details, please look at the detail tables above

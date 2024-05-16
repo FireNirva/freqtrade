@@ -1,0 +1,93 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy NotAnotherSMAOffsetStrategyHOv3
+============================================================ BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| ALGO/USDT |        38 |           2.39 |          90.73 |          2746.832 |          27.47 |        10:14:00 |    33     0     5  86.8 |
+|  BCH/USDT |        44 |           1.12 |          49.45 |          1065.351 |          10.65 |        12:25:00 |    37     0     7  84.1 |
+|  DOT/USDT |        62 |           0.58 |          35.97 |          1033.040 |          10.33 |        14:30:00 |    51     0    11  82.3 |
+|  XRP/USDT |        46 |           1.05 |          48.51 |           894.953 |           8.95 |        13:52:00 |    38     0     8  82.6 |
+|  SOL/USDT |        75 |           0.61 |          45.47 |           871.596 |           8.72 |        11:53:00 |    57     0    18  76.0 |
+|  ADA/USDT |        36 |           0.70 |          25.02 |           738.852 |           7.39 |        10:42:00 |    31     0     5  86.1 |
+|  ETH/USDT |        36 |           0.61 |          22.04 |           568.324 |           5.68 |        16:15:00 |    28     0     8  77.8 |
+| LINK/USDT |        54 |           0.18 |           9.63 |           197.578 |           1.98 |        13:26:00 |    45     0     9  83.3 |
+|  BTC/USDT |         9 |          -0.72 |          -6.48 |          -172.040 |          -1.72 | 1 day, 12:13:00 |     6     0     3  66.7 |
+|     TOTAL |       400 |           0.80 |         320.34 |          7944.487 |          79.44 |        13:28:00 |   326     0    74  81.5 |
+========================================================= LEFT OPEN TRADES REPORT ==========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| SOL/USDT |         1 |          -1.60 |          -1.60 |           -57.413 |          -0.57 |          2:00:00 |     0     0     1     0 |
+| BTC/USDT |         1 |          -5.41 |          -5.41 |          -189.995 |          -1.90 |  5 days, 9:00:00 |     0     0     1     0 |
+|    TOTAL |         2 |          -3.50 |          -7.00 |          -247.409 |          -2.47 | 2 days, 17:30:00 |     0     0     2     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |       400 |           0.80 |         320.34 |          7944.487 |          79.44 |       13:28:00 |   326     0    74  81.5 |
+| TOTAL |       400 |           0.80 |         320.34 |          7944.487 |          79.44 |       13:28:00 |   326     0    74  81.5 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| trailing_stop_loss |     284 |    284     0     0   100 |           2.74 |         777.44 |         20750.6   |         155.49 |
+|        exit_signal |     110 |     42     0    68  38.2 |          -3    |        -329.56 |         -9244.57  |         -65.91 |
+|          stop_loss |       4 |      0     0     4     0 |         -30.13 |        -120.54 |         -3314.14  |         -24.11 |
+|         force_exit |       2 |      0     0     2     0 |          -3.5  |          -7    |          -247.409 |          -1.4  |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2021-04-09 00:00:00 |
+| Backtesting to              | 2021-10-27 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 400 / 1.99          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 17944.487 USDT      |
+| Absolute profit             | 7944.487 USDT       |
+| Total profit %              | 79.44%              |
+| CAGR %                      | 189.15%             |
+| Sortino                     | 3.66                |
+| Sharpe                      | 5.51                |
+| Calmar                      | 33.75               |
+| Profit factor               | 1.57                |
+| Expectancy (Ratio)          | 19.86 (0.11)        |
+| Trades per day              | 1.99                |
+| Avg. daily profit %         | 0.40%               |
+| Avg. stake amount           | 2699.012 USDT       |
+| Total trade volume          | 1079604.922 USDT    |
+|                             |                     |
+| Best Pair                   | ALGO/USDT 90.73%    |
+| Worst Pair                  | BTC/USDT -6.48%     |
+| Best trade                  | ALGO/USDT 7.94%     |
+| Worst trade                 | LINK/USDT -30.14%   |
+| Best day                    | 833.664 USDT        |
+| Worst day                   | -1857.247 USDT      |
+| Days win/draw/lose          | 107 / 66 / 29       |
+| Avg. Duration Winners       | 7:33:00             |
+| Avg. Duration Loser         | 1 day, 15:31:00     |
+| Max Consecutive Wins / Loss | 32 / 5              |
+| Rejected Entry signals      | 144                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 10066.619 USDT      |
+| Max balance                 | 18191.895 USDT      |
+| Max % of account underwater | 22.38%              |
+| Absolute Drawdown (Account) | 22.38%              |
+| Absolute Drawdown           | 3272.259 USDT       |
+| Drawdown high               | 4623.641 USDT       |
+| Drawdown low                | 1351.382 USDT       |
+| Drawdown Start              | 2021-05-13 10:00:00 |
+| Drawdown End                | 2021-06-20 20:00:00 |
+| Market change               | 155.21%             |
+=====================================================
+
+Backtested 2021-04-09 00:00:00 -> 2021-10-27 00:00:00 | Max open trades : 5
+==================================================================================== STRATEGY SUMMARY ===================================================================================
+|                        Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|---------------------------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+-----------------------|
+| NotAnotherSMAOffsetStrategyHOv3 |       400 |           0.80 |         320.34 |          7944.487 |          79.44 |       13:28:00 |   326     0    74  81.5 | 3272.259 USDT  22.38% |
+=========================================================================================================================================================================================
+
+For more details, please look at the detail tables above

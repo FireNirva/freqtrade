@@ -1,0 +1,90 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy FrostAuraM115mStrategy
+============================================================ BACKTESTING REPORT ===========================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  DOT/USDT |       110 |          -0.19 |         -21.09 |           -35.187 |          -0.35 | 1 day, 8:00:00 |    34    60    16  30.9 |
+| LINK/USDT |       257 |          -0.18 |         -46.87 |          -156.814 |          -1.57 | 1 day, 0:04:00 |    72   163    22  28.0 |
+|  SOL/USDT |       183 |          -0.65 |        -118.94 |          -355.033 |          -3.55 | 1 day, 0:56:00 |    58   106    19  31.7 |
+|  ADA/USDT |       242 |          -0.41 |        -100.05 |         -1003.863 |         -10.04 | 1 day, 1:08:00 |    70   149    23  28.9 |
+|  ETH/USDT |       260 |          -0.55 |        -143.84 |         -1302.922 |         -13.03 | 1 day, 1:43:00 |    75   157    28  28.8 |
+|  BTC/USDT |       275 |          -0.62 |        -170.98 |         -1350.139 |         -13.50 | 1 day, 4:51:00 |    63   185    27  22.9 |
+|  BCH/USDT |       234 |          -0.95 |        -222.57 |         -1592.436 |         -15.92 | 1 day, 4:49:00 |    72   127    35  30.8 |
+|  XRP/USDT |       259 |          -0.55 |        -143.45 |         -1666.170 |         -16.66 |       22:58:00 |    79   156    24  30.5 |
+| ALGO/USDT |       173 |          -0.53 |         -91.77 |         -1719.095 |         -17.19 | 1 day, 1:07:00 |    43   112    18  24.9 |
+|     TOTAL |      1993 |          -0.53 |       -1059.55 |         -9181.660 |         -91.82 | 1 day, 2:06:00 |   566  1215   212  28.4 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |      1993 |          -0.53 |       -1059.55 |         -9181.660 |         -91.82 | 1 day, 2:06:00 |   566  1215   212  28.4 |
+| TOTAL |      1993 |          -0.53 |       -1059.55 |         -9181.660 |         -91.82 | 1 day, 2:06:00 |   566  1215   212  28.4 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |    1739 |    524  1215     0   100 |           0.55 |         949.98 |           6735.73 |         190    |
+|   exit_signal |     222 |     42     0   180  18.9 |          -4.09 |        -907.76 |          -6969.48 |        -181.55 |
+|     stop_loss |      32 |      0     0    32     0 |         -34.43 |       -1101.78 |          -8947.92 |        -220.36 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-02 00:00:00 |
+| Backtesting to              | 2024-02-11 08:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 1993 / 1.05         |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 818.34 USDT         |
+| Absolute profit             | -9181.66 USDT       |
+| Total profit %              | -91.82%             |
+| CAGR %                      | -38.22%             |
+| Sortino                     | -0.80               |
+| Sharpe                      | -1.91               |
+| Calmar                      | -1.01               |
+| Profit factor               | 0.47                |
+| Expectancy (Ratio)          | -4.61 (-0.67)       |
+| Trades per day              | 1.05                |
+| Avg. daily profit %         | -0.05%              |
+| Avg. stake amount           | 703.641 USDT        |
+| Total trade volume          | 1402357.136 USDT    |
+|                             |                     |
+| Best Pair                   | DOT/USDT -21.09%    |
+| Worst Pair                  | BCH/USDT -222.57%   |
+| Best trade                  | SOL/USDT 25.00%     |
+| Worst trade                 | BTC/USDT -34.45%    |
+| Best day                    | 362.338 USDT        |
+| Worst day                   | -2441.425 USDT      |
+| Days win/draw/lose          | 310 / 1438 / 144    |
+| Avg. Duration Winners       | 7:40:00             |
+| Avg. Duration Loser         | 5 days, 16:14:00    |
+| Max Consecutive Wins / Loss | 10 / 38             |
+| Rejected Entry signals      | 1142                |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 801.304 USDT        |
+| Max balance                 | 10000 USDT          |
+| Max % of account underwater | 91.99%              |
+| Absolute Drawdown (Account) | 91.99%              |
+| Absolute Drawdown           | 9198.696 USDT       |
+| Drawdown high               | 0 USDT              |
+| Drawdown low                | -9198.696 USDT      |
+| Drawdown Start              | 2018-12-04 00:00:00 |
+| Drawdown End                | 2023-10-21 08:00:00 |
+| Market change               | 1409.48%            |
+=====================================================
+
+Backtested 2018-12-02 00:00:00 -> 2024-02-11 08:00:00 | Max open trades : 5
+=============================================================================== STRATEGY SUMMARY ===============================================================================
+|               Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+-----------------------|
+| FrostAuraM115mStrategy |      1993 |          -0.53 |       -1059.55 |         -9181.660 |         -91.82 | 1 day, 2:06:00 |   566  1215   212  28.4 | 9198.696 USDT  91.99% |
+================================================================================================================================================================================
+
+For more details, please look at the detail tables above

@@ -1,0 +1,96 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy PrawnstarOBV
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  SOL/USDT |       215 |           1.59 |         342.69 |         10823.136 |         108.23 |         18:22:00 |   176     0    39  81.9 |
+| LINK/USDT |       153 |           0.92 |         140.26 |          3954.699 |          39.55 |   1 day, 3:32:00 |   119     0    34  77.8 |
+|  ETH/USDT |        92 |           0.99 |          91.15 |          2427.130 |          24.27 |  2 days, 0:26:00 |    73     0    19  79.3 |
+|  BCH/USDT |       114 |           0.51 |          57.93 |           716.610 |           7.17 |  1 day, 14:19:00 |    87     0    27  76.3 |
+|  XRP/USDT |         8 |           3.58 |          28.65 |           604.081 |           6.04 |          5:30:00 |     7     0     1  87.5 |
+|  ADA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  DOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+| ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |             0:00 |     0     0     0     0 |
+|  BTC/USDT |        63 |          -0.17 |         -10.75 |          -778.785 |          -7.79 | 2 days, 23:37:00 |    46     1    16  73.0 |
+|     TOTAL |       645 |           1.01 |         649.93 |         17746.872 |         177.47 |   1 day, 9:24:00 |   508     1   136  78.8 |
+========================================================== LEFT OPEN TRADES REPORT ===========================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+| LINK/USDT |         1 |          -0.44 |          -0.44 |           -25.711 |          -0.26 |    1 day, 8:00:00 |     0     0     1     0 |
+|  ETH/USDT |         1 |          -2.10 |          -2.10 |          -113.372 |          -1.13 |  5 days, 12:00:00 |     0     0     1     0 |
+|  BCH/USDT |         1 |          -5.32 |          -5.32 |          -262.282 |          -2.62 | 10 days, 12:00:00 |     0     0     1     0 |
+|  SOL/USDT |         1 |          -8.76 |          -8.76 |          -506.412 |          -5.06 |    1 day, 8:00:00 |     0     0     1     0 |
+|  BTC/USDT |         1 |          -9.97 |          -9.97 |          -516.452 |          -5.16 |   6 days, 8:00:00 |     0     0     1     0 |
+|     TOTAL |         5 |          -5.32 |         -26.60 |         -1424.229 |         -14.24 |   5 days, 0:00:00 |     0     0     5     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |       645 |           1.01 |         649.93 |         17746.872 |         177.47 | 1 day, 9:24:00 |   508     1   136  78.8 |
+| TOTAL |       645 |           1.01 |         649.93 |         17746.872 |         177.47 | 1 day, 9:24:00 |   508     1   136  78.8 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| trailing_stop_loss |     507 |    507     0     0   100 |           5.25 |        2663    |         74518.2   |         532.6  |
+|          stop_loss |     131 |      0     0   131     0 |         -15.17 |       -1986.67 |        -55351.7   |        -397.33 |
+|         force_exit |       5 |      0     0     5     0 |          -5.32 |         -26.6  |         -1424.23  |          -5.32 |
+|                roi |       2 |      1     1     0   100 |           0.1  |           0.2  |             4.625 |           0.04 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2021-04-09 00:00:00 |
+| Backtesting to              | 2021-10-27 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 645 / 3.21          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 27746.872 USDT      |
+| Absolute profit             | 17746.872 USDT      |
+| Total profit %              | 177.47%             |
+| CAGR %                      | 538.03%             |
+| Sortino                     | 11.89               |
+| Sharpe                      | 6.79                |
+| Calmar                      | 26.87               |
+| Profit factor               | 1.31                |
+| Expectancy (Ratio)          | 27.51 (0.06)        |
+| Trades per day              | 3.21                |
+| Avg. daily profit %         | 0.88%               |
+| Avg. stake amount           | 2819.878 USDT       |
+| Total trade volume          | 1818821.459 USDT    |
+|                             |                     |
+| Best Pair                   | SOL/USDT 342.69%    |
+| Worst Pair                  | BTC/USDT -10.75%    |
+| Best trade                  | LINK/USDT 21.29%    |
+| Worst trade                 | SOL/USDT -15.17%    |
+| Best day                    | 1807.525 USDT       |
+| Worst day                   | -5854.977 USDT      |
+| Days win/draw/lose          | 115 / 41 / 46       |
+| Avg. Duration Winners       | 1 day, 2:46:00      |
+| Avg. Duration Loser         | 2 days, 10:04:00    |
+| Max Consecutive Wins / Loss | 83 / 13             |
+| Rejected Entry signals      | 4806                |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 7427.443 USDT       |
+| Max balance                 | 29171.102 USDT      |
+| Max % of account underwater | 62.79%              |
+| Absolute Drawdown (Account) | 62.79%              |
+| Absolute Drawdown           | 12530.875 USDT      |
+| Drawdown high               | 9958.317 USDT       |
+| Drawdown low                | -2572.557 USDT      |
+| Drawdown Start              | 2021-05-12 12:00:00 |
+| Drawdown End                | 2021-07-20 00:00:00 |
+| Market change               | 128.02%             |
+=====================================================
+
+Backtested 2021-04-09 00:00:00 -> 2021-10-27 00:00:00 | Max open trades : 5
+=========================================================================== STRATEGY SUMMARY ==========================================================================
+|     Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |               Drawdown |
+|--------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+------------------------|
+| PrawnstarOBV |       645 |           1.01 |         649.93 |         17746.872 |         177.47 | 1 day, 9:24:00 |   508     1   136  78.8 | 12530.875 USDT  62.79% |
+=======================================================================================================================================================================
+
+For more details, please look at the detail tables above

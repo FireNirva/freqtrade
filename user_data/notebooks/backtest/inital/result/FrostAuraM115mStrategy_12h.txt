@@ -1,0 +1,90 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy FrostAuraM115mStrategy
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  DOT/USDT |        47 |           0.51 |          23.97 |           215.478 |           2.15 |  1 day, 17:37:00 |     8    38     1  17.0 |
+|  SOL/USDT |        63 |          -0.99 |         -62.57 |          -503.620 |          -5.04 |   1 day, 2:40:00 |    16    42     5  25.4 |
+|  BCH/USDT |        92 |          -0.89 |         -82.25 |          -804.138 |          -8.04 |  1 day, 12:55:00 |    24    62     6  26.1 |
+| ALGO/USDT |        61 |          -2.22 |        -135.59 |          -862.180 |          -8.62 | 3 days, 12:24:00 |    16    37     8  26.2 |
+|  ADA/USDT |        74 |          -0.84 |         -61.94 |          -908.136 |          -9.08 | 2 days, 10:23:00 |    13    55     6  17.6 |
+|  XRP/USDT |       101 |          -1.02 |        -102.89 |         -1213.103 |         -12.13 | 2 days, 10:34:00 |    23    70     8  22.8 |
+|  BTC/USDT |        97 |          -1.32 |        -128.28 |         -1277.194 |         -12.77 | 2 days, 10:53:00 |    20    68     9  20.6 |
+| LINK/USDT |        87 |          -1.53 |        -132.83 |         -1346.489 |         -13.46 |  2 days, 6:04:00 |    25    53     9  28.7 |
+|  ETH/USDT |        92 |          -1.67 |        -153.62 |         -1785.926 |         -17.86 |  2 days, 7:57:00 |    30    53     9  32.6 |
+|     TOTAL |       714 |          -1.17 |        -836.00 |         -8485.308 |         -84.85 |  2 days, 5:12:00 |   175   478    61  24.5 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |       714 |          -1.17 |        -836.00 |         -8485.308 |         -84.85 | 2 days, 5:12:00 |   175   478    61  24.5 |
+| TOTAL |       714 |          -1.17 |        -836.00 |         -8485.308 |         -84.85 | 2 days, 5:12:00 |   175   478    61  24.5 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |     650 |    172   478     0   100 |           0.68 |         440.39 |           4070.18 |          88.08 |
+|   exit_signal |      35 |      3     0    32   8.6 |          -7.94 |        -277.77 |          -2094.51 |         -55.55 |
+|     stop_loss |      29 |      0     0    29     0 |         -34.44 |        -998.62 |         -10461    |        -199.72 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-12 00:00:00 |
+| Backtesting to              | 2024-02-14 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 714 / 0.38          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 1514.692 USDT       |
+| Absolute profit             | -8485.308 USDT      |
+| Total profit %              | -84.85%             |
+| CAGR %                      | -30.55%             |
+| Sortino                     | -0.48               |
+| Sharpe                      | -1.04               |
+| Calmar                      | -1.01               |
+| Profit factor               | 0.34                |
+| Expectancy (Ratio)          | -11.88 (-0.73)      |
+| Trades per day              | 0.38                |
+| Avg. daily profit %         | -0.04%              |
+| Avg. stake amount           | 918.159 USDT        |
+| Total trade volume          | 655565.685 USDT     |
+|                             |                     |
+| Best Pair                   | DOT/USDT 23.97%     |
+| Worst Pair                  | ETH/USDT -153.62%   |
+| Best trade                  | SOL/USDT 25.00%     |
+| Worst trade                 | BTC/USDT -34.45%    |
+| Best day                    | 330.494 USDT        |
+| Worst day                   | -1623.244 USDT      |
+| Days win/draw/lose          | 112 / 1695 / 48     |
+| Avg. Duration Winners       | 11:52:00            |
+| Avg. Duration Loser         | 14 days, 20:04:00   |
+| Max Consecutive Wins / Loss | 9 / 25              |
+| Rejected Entry signals      | 295                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 1490.572 USDT       |
+| Max balance                 | 10039.82 USDT       |
+| Max % of account underwater | 85.15%              |
+| Absolute Drawdown (Account) | 85.15%              |
+| Absolute Drawdown           | 8549.248 USDT       |
+| Drawdown high               | 39.82 USDT          |
+| Drawdown low                | -8509.428 USDT      |
+| Drawdown Start              | 2019-08-02 00:00:00 |
+| Drawdown End                | 2023-09-18 12:00:00 |
+| Market change               | 1459.75%            |
+=====================================================
+
+Backtested 2018-12-12 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+================================================================================ STRATEGY SUMMARY ===============================================================================
+|               Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+-----------------------|
+| FrostAuraM115mStrategy |       714 |          -1.17 |        -836.00 |         -8485.308 |         -84.85 | 2 days, 5:12:00 |   175   478    61  24.5 | 8549.248 USDT  85.15% |
+=================================================================================================================================================================================
+
+For more details, please look at the detail tables above

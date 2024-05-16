@@ -1,0 +1,92 @@
+{
+    "trading_mode": "futures",
+    "new_pairs_days": 30,
+    "margin_mode": "isolated",
+    "max_open_trades": 8,
+    "stake_currency": "USDT",
+    "stake_amount": 1000,
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "timeframe": "15m",
+    "dataformat_ohlcv": "json",
+    "dry_run_wallet": 12000,
+    "cancel_open_orders_on_exit": true,
+    "order_types": {
+        "entry": "market",
+        "exit": "market",
+        "emergency_exit": "market",
+        "stoploss": "market",
+        "force_exit": "market",
+        "stoploss_on_exchange": false
+    },
+    "unfilledtimeout": {
+        "entry": 1,
+        "exit": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50,
+          "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+          }
+        },
+        "pair_whitelist": [
+            "1INCH/USDT:USDT",
+            "AAVE/USDT:USDT",
+            "ADA/USDT:USDT",
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT",
+            "DOT/USDT:USDT",
+            "LINK/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "SOL/USDT:USDT",
+            "MATIC/USDT:USDT",
+            "EGLD/USDT:USDT",
+            "XLM/USDT:USDT",
+            "XRP/USDT:USDT",
+            "XMR/USDT:USDT",
+            "ZEC/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "SNX/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "LTC/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        },
+        {
+            "method": "ShuffleFilter",
+            "seed": 42
+        }
+    ],
+    "bot_name": "santiment_test",
+    "force_entry_enable": true,
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

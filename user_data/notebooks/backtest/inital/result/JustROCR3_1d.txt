@@ -1,0 +1,89 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy JustROCR3
+============================================================ BACKTESTING REPORT ===========================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  DOT/USDT |       126 |          -1.14 |        -143.38 |           -88.853 |          -0.89 |        0:00:00 |     0     0   126     0 |
+|  SOL/USDT |       322 |          -1.11 |        -356.86 |          -186.275 |          -1.86 |        0:00:00 |     0     0   322     0 |
+|  BCH/USDT |       283 |          -1.11 |        -314.97 |          -581.270 |          -5.81 |        0:00:00 |     0     0   283     0 |
+| ALGO/USDT |       200 |          -1.15 |        -229.08 |          -694.499 |          -6.94 |        0:00:00 |     0     0   200     0 |
+|  XRP/USDT |       277 |          -1.11 |        -307.87 |         -1159.362 |         -11.59 |        0:00:00 |     0     0   277     0 |
+|  BTC/USDT |       329 |          -1.08 |        -355.81 |         -1466.343 |         -14.66 |        0:00:00 |     0     0   329     0 |
+|  ADA/USDT |       324 |          -1.08 |        -349.63 |         -1693.724 |         -16.94 |        0:00:00 |     0     0   324     0 |
+| LINK/USDT |       480 |          -1.13 |        -543.66 |         -2014.970 |         -20.15 |        0:00:00 |     0     0   480     0 |
+|  ETH/USDT |       454 |          -1.10 |        -498.85 |         -2093.289 |         -20.93 |        0:00:00 |     0     0   454     0 |
+|     TOTAL |      2795 |          -1.11 |       -3100.12 |         -9978.587 |         -99.79 |        0:00:00 |     0     0  2795     0 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |      2795 |          -1.11 |       -3100.12 |         -9978.587 |         -99.79 |        0:00:00 |     0     0  2795     0 |
+| TOTAL |      2795 |          -1.11 |       -3100.12 |         -9978.587 |         -99.79 |        0:00:00 |     0     0  2795     0 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|          stop_loss |    2391 |      0     0  2391     0 |          -1.18 |       -2824.6  |          -8956.57 |        -564.92 |
+| trailing_stop_loss |     404 |      0     0   404     0 |          -0.68 |        -275.52 |          -1022.02 |         -55.1  |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-11-27 00:00:00 |
+| Backtesting to              | 2024-02-10 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 2795 / 1.47         |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 21.413 USDT         |
+| Absolute profit             | -9978.587 USDT      |
+| Total profit %              | -99.79%             |
+| CAGR %                      | -69.28%             |
+| Sortino                     | -19.29              |
+| Sharpe                      | -19.29              |
+| Calmar                      | -1.01               |
+| Profit factor               | 0.00                |
+| Expectancy (Ratio)          | -3.57 (-1.00)       |
+| Trades per day              | 1.47                |
+| Avg. daily profit %         | -0.05%              |
+| Avg. stake amount           | 331.083 USDT        |
+| Total trade volume          | 925376.67 USDT      |
+|                             |                     |
+| Best Pair                   | DOT/USDT -143.38%   |
+| Worst Pair                  | LINK/USDT -543.66%  |
+| Best trade                  | ETH/USDT -0.20%     |
+| Worst trade                 | ETH/USDT -1.20%     |
+| Best day                    | 0 USDT              |
+| Worst day                   | -92.157 USDT        |
+| Days win/draw/lose          | 0 / 703 / 947       |
+| Avg. Duration Winners       | 0:00:00             |
+| Avg. Duration Loser         | 0:00:00             |
+| Max Consecutive Wins / Loss | 0 / 2795            |
+| Rejected Entry signals      | 437                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 21.413 USDT         |
+| Max balance                 | 9976.337 USDT       |
+| Max % of account underwater | 99.79%              |
+| Absolute Drawdown (Account) | 99.79%              |
+| Absolute Drawdown           | 9954.923 USDT       |
+| Drawdown high               | -23.663 USDT        |
+| Drawdown low                | -9978.587 USDT      |
+| Drawdown Start              | 2018-12-19 00:00:00 |
+| Drawdown End                | 2023-06-25 00:00:00 |
+| Market change               | 1307.85%            |
+=====================================================
+
+Backtested 2018-11-27 00:00:00 -> 2024-02-10 00:00:00 | Max open trades : 5
+========================================================================= STRATEGY SUMMARY =========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+-----------------------|
+|  JustROCR3 |      2795 |          -1.11 |       -3100.12 |         -9978.587 |         -99.79 |        0:00:00 |     0     0  2795     0 | 9954.923 USDT  99.79% |
+====================================================================================================================================================================
+
+For more details, please look at the detail tables above

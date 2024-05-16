@@ -1,0 +1,122 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy NostalgiaForInfinityNext_ChangeToTower_V5_3
+============================================================ BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+|  ADA/USDT |        59 |           1.84 |         108.53 |          2890.418 |          28.90 |        14:53:00 |    55     0     4  93.2 |
+|  SOL/USDT |        72 |           1.20 |          86.74 |          2458.857 |          24.59 |         9:56:00 |    63     0     9  87.5 |
+| LINK/USDT |        80 |           1.36 |         109.09 |          2433.835 |          24.34 |        12:58:00 |    72     0     8  90.0 |
+|  DOT/USDT |        39 |           1.44 |          56.32 |          1329.797 |          13.30 |         7:57:00 |    34     0     5  87.2 |
+|  XRP/USDT |        60 |           0.56 |          33.88 |           942.893 |           9.43 |        14:22:00 |    48     0    12  80.0 |
+| ALGO/USDT |        73 |           0.20 |          14.86 |           209.642 |           2.10 |        18:41:00 |    60     0    13  82.2 |
+|  BCH/USDT |        49 |          -0.25 |         -12.28 |          -626.057 |          -6.26 |        17:23:00 |    39     0    10  79.6 |
+|  ETH/USDT |        48 |          -0.64 |         -30.87 |          -818.396 |          -8.18 |  1 day, 9:44:00 |    38     0    10  79.2 |
+|  BTC/USDT |        38 |          -1.60 |         -60.84 |         -1742.550 |         -17.43 | 1 day, 16:44:00 |    26     0    12  68.4 |
+|     TOTAL |       518 |           0.59 |         305.45 |          7078.438 |          70.78 |        17:44:00 |   435     0    83  84.0 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+| OTHER |       518 |           0.59 |         305.45 |          7078.438 |          70.78 |       17:44:00 |   435     0    83  84.0 |
+| TOTAL |       518 |           0.59 |         305.45 |          7078.438 |          70.78 |       17:44:00 |   435     0    83  84.0 |
+============================================================= EXIT REASON STATS =============================================================
+|                   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|-------------------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| signal_profit_q_pmax_bear ( ) |     149 |    149     0     0   100 |           2.49 |         371.69 |          9564.31  |          74.34 |
+|      signal_ichi_stoploss ( ) |      66 |      0     0    66     0 |         -12.74 |        -840.63 |        -21762.2   |        -168.13 |
+|    signal_profit_u_bear_1 ( ) |      43 |     43     0     0   100 |           2.48 |         106.73 |          2981.26  |          21.35 |
+|     signal_ichi_recover_0 ( ) |      38 |     38     0     0   100 |           5.16 |         196.07 |          5065.13  |          39.21 |
+|    signal_profit_u_bear_0 ( ) |      36 |     36     0     0   100 |           1.36 |          48.86 |          1359.09  |           9.77 |
+|    signal_profit_u_bull_0 ( ) |      32 |     32     0     0   100 |           1.28 |          41.09 |          1072.41  |           8.22 |
+|    signal_profit_u_bull_1 ( ) |      28 |     28     0     0   100 |           2.41 |          67.51 |          1678.46  |          13.5  |
+|     signal_stoploss_q_atr ( ) |      15 |      0     0    15     0 |         -10.9  |        -163.53 |         -4879.81  |         -32.71 |
+|    signal_profit_u_bull_2 ( ) |      13 |     13     0     0   100 |           3.44 |          44.73 |           980.221 |           8.95 |
+|    signal_profit_u_bear_3 ( ) |      12 |     12     0     0   100 |           4.61 |          55.35 |          1458.14  |          11.07 |
+|    signal_profit_u_bear_2 ( ) |      12 |     12     0     0   100 |           3.25 |          38.98 |          1096.47  |           7.8  |
+|         signal_profit_r_2 ( ) |      11 |     11     0     0   100 |           1.33 |          14.67 |           366.8   |           2.93 |
+|         signal_ichi_zlema ( ) |       8 |      8     0     0   100 |           1.27 |          10.13 |           285.27  |           2.03 |
+|     signal_ichi_recover_4 ( ) |       7 |      7     0     0   100 |           7.79 |          54.5  |          1218.51  |          10.9  |
+|    signal_ichi_slow_trade ( ) |       6 |      6     0     0   100 |           6.34 |          38.04 |          1162.1   |           7.61 |
+|     signal_ichi_recover_3 ( ) |       6 |      6     0     0   100 |           5.96 |          35.74 |           911.474 |           7.15 |
+|     signal_ichi_recover_1 ( ) |       4 |      4     0     0   100 |           4.99 |          19.95 |           510.653 |           3.99 |
+|         signal_profit_l_1 ( ) |       4 |      4     0     0   100 |           3.59 |          14.36 |           395.37  |           2.87 |
+|    signal_profit_o_bull_5 ( ) |       3 |      3     0     0   100 |           6.48 |          19.45 |           516.025 |           3.89 |
+|    signal_profit_o_bull_1 ( ) |       3 |      3     0     0   100 |           2.84 |           8.52 |           193.397 |           1.7  |
+|    signal_profit_zlema_up ( ) |       3 |      3     0     0   100 |           3.44 |          10.32 |           326.72  |           2.06 |
+|     signal_ichi_recover_2 ( ) |       3 |      3     0     0   100 |           5.28 |          15.85 |           378.696 |           3.17 |
+|    signal_ichi_underwater ( ) |       2 |      0     0     2     0 |          -1.08 |          -2.16 |           -50.093 |          -0.43 |
+|   signal_profit_u_bear_10 ( ) |       2 |      2     0     0   100 |          13.97 |          27.95 |           532.215 |           5.59 |
+|      signal_ichi_trailing ( ) |       2 |      2     0     0   100 |           8.56 |          17.12 |           470.942 |           3.42 |
+|       signal_profit_p_d_1 ( ) |       1 |      1     0     0   100 |           0.75 |           0.75 |            20.316 |           0.15 |
+|  signal_profit_u_bear_5_1 ( ) |       1 |      1     0     0   100 |           6.79 |           6.79 |           183.682 |           1.36 |
+|         signal_profit_t_2 ( ) |       1 |      1     0     0   100 |          10.81 |          10.81 |           254.585 |           2.16 |
+|       signal_profit_p_1_1 ( ) |       1 |      1     0     0   100 |           1.24 |           1.24 |            27.649 |           0.25 |
+|         signal_profit_d_2 ( ) |       1 |      1     0     0   100 |           7.05 |           7.05 |           144.255 |           1.41 |
+|    signal_profit_u_bull_3 ( ) |       1 |      1     0     0   100 |           4.4  |           4.4  |            90.172 |           0.88 |
+|         signal_profit_d_1 ( ) |       1 |      1     0     0   100 |          10.3  |          10.3  |           223.029 |           2.06 |
+|    signal_profit_o_bull_7 ( ) |       1 |      1     0     0   100 |           8.2  |           8.2  |           182.27  |           1.64 |
+|    signal_profit_o_bull_2 ( ) |       1 |      1     0     0   100 |           3.21 |           3.21 |            71.815 |           0.64 |
+|    signal_profit_o_bull_0 ( ) |       1 |      1     0     0   100 |           1.4  |           1.4  |            49.111 |           0.28 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-17 00:00:00 |
+| Backtesting to              | 2024-02-11 13:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 518 / 0.28          |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 17078.438 USDT      |
+| Absolute profit             | 7078.438 USDT       |
+| Total profit %              | 70.78%              |
+| CAGR %                      | 10.94%              |
+| Sortino                     | 0.67                |
+| Sharpe                      | 0.44                |
+| Calmar                      | 4.45                |
+| Profit factor               | 1.27                |
+| Expectancy (Ratio)          | 13.66 (0.04)        |
+| Trades per day              | 0.28                |
+| Avg. daily profit %         | 0.04%               |
+| Avg. stake amount           | 2639.32 USDT        |
+| Total trade volume          | 1367167.6 USDT      |
+|                             |                     |
+| Best Pair                   | LINK/USDT 109.09%   |
+| Worst Pair                  | BTC/USDT -60.84%    |
+| Best trade                  | ALGO/USDT 17.51%    |
+| Worst trade                 | ALGO/USDT -24.51%   |
+| Best day                    | 1058.906 USDT       |
+| Worst day                   | -1559.064 USDT      |
+| Days win/draw/lose          | 225 / 1581 / 46     |
+| Avg. Duration Winners       | 12:29:00            |
+| Avg. Duration Loser         | 1 day, 21:14:00     |
+| Max Consecutive Wins / Loss | 36 / 5              |
+| Rejected Entry signals      | 65                  |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9224.04 USDT        |
+| Max balance                 | 18293.025 USDT      |
+| Max % of account underwater | 21.71%              |
+| Absolute Drawdown (Account) | 16.13%              |
+| Absolute Drawdown           | 2950.951 USDT       |
+| Drawdown high               | 8293.025 USDT       |
+| Drawdown low                | 5342.075 USDT       |
+| Drawdown Start              | 2022-06-11 08:00:00 |
+| Drawdown End                | 2022-11-09 22:00:00 |
+| Market change               | 1371.77%            |
+=====================================================
+
+Backtested 2018-12-17 00:00:00 -> 2024-02-11 13:00:00 | Max open trades : 5
+========================================================================================== STRATEGY SUMMARY =========================================================================================
+|                                    Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|---------------------------------------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+-----------------------|
+| NostalgiaForInfinityNext_ChangeToTower_V5_3 |       518 |           0.59 |         305.45 |          7078.438 |          70.78 |       17:44:00 |   435     0    83  84.0 | 2950.951 USDT  16.13% |
+=====================================================================================================================================================================================================
+
+For more details, please look at the detail tables above

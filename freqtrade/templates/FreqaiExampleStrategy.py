@@ -44,6 +44,7 @@ class FreqaiExampleStrategy(IStrategy):
     # this is the maximum period fed to talib (timeframe independent)
     startup_candle_count: int = 40
     can_short = True
+    timeframe = "1m"
 
     def feature_engineering_expand_all(self, dataframe: DataFrame, period: int,
                                        metadata: Dict, **kwargs) -> DataFrame:

@@ -9,12 +9,13 @@ logger = logging.getLogger(__name__)
 
 
 class RLStrategy(IStrategy):
+    minimal_roi = {"0": 0.025}
     process_only_new_candles = True
-    # stoploss = -0.05
+    stoploss = -0.05
     use_exit_signal = True
     # this is the maximum period fed to talib (timeframe independent)
-    startup_candle_count: int = 240
-    stoploss = -0.10
+    startup_candle_count: int = 300
+    # stoploss = -0.10
     can_short = True
     timeframe = "1m"
 

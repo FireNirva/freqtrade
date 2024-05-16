@@ -1,0 +1,87 @@
+Result for strategy TrixV21Strategy
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| LINK/USDT |         5 |           9.88 |          49.38 |          1008.889 |          10.09 | 2 days, 14:24:00 |     5     0     0   100 |
+|  ADA/USDT |         6 |           2.12 |          12.69 |           276.329 |           2.76 | 6 days, 12:00:00 |     5     0     1  83.3 |
+|  SOL/USDT |         3 |           2.00 |           5.99 |           127.717 |           1.28 |   1 day, 0:00:00 |     3     0     0   100 |
+| ALGO/USDT |         2 |           2.00 |           4.00 |            82.037 |           0.82 |  1 day, 12:00:00 |     2     0     0   100 |
+|  BTC/USDT |         5 |          -0.55 |          -2.75 |           -63.237 |          -0.63 | 4 days, 14:24:00 |     4     0     1  80.0 |
+|  ETH/USDT |         3 |          -1.92 |          -5.77 |          -110.841 |          -1.11 | 12 days, 0:00:00 |     2     0     1  66.7 |
+|  XRP/USDT |         5 |          -2.52 |         -12.60 |          -255.296 |          -2.55 |  2 days, 0:00:00 |     4     0     1  80.0 |
+|  BCH/USDT |         1 |         -21.10 |         -21.10 |          -417.908 |          -4.18 |  8 days, 0:00:00 |     0     0     1     0 |
+|  DOT/USDT |         7 |          -7.47 |         -52.28 |         -1175.836 |         -11.76 |  2 days, 0:00:00 |     5     0     2  71.4 |
+|     TOTAL |        37 |          -0.61 |         -22.44 |          -528.145 |          -5.28 |  4 days, 0:39:00 |    30     0     7  81.1 |
+========================================================= LEFT OPEN TRADES REPORT ==========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| ADA/USDT |         1 |          -6.58 |          -6.58 |          -125.133 |          -1.25 | 33 days, 0:00:00 |     0     0     1     0 |
+|    TOTAL |         1 |          -6.58 |          -6.58 |          -125.133 |          -1.25 | 33 days, 0:00:00 |     0     0     1     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |        37 |          -0.61 |         -22.44 |          -528.145 |          -5.28 | 4 days, 0:39:00 |    30     0     7  81.1 |
+| TOTAL |        37 |          -0.61 |         -22.44 |          -528.145 |          -5.28 | 4 days, 0:39:00 |    30     0     7  81.1 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|                roi |      30 |     30     0     0   100 |           3.71 |         111.4  |          2307.32  |          22.28 |
+| trailing_stop_loss |       4 |      0     0     4     0 |         -16.25 |         -64.99 |         -1323.28  |         -13    |
+|          stop_loss |       2 |      0     0     2     0 |         -31.14 |         -62.27 |         -1387.05  |         -12.45 |
+|         force_exit |       1 |      0     0     1     0 |          -6.58 |          -6.58 |          -125.133 |          -1.32 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2019-03-26 00:00:00 |
+| Backtesting to              | 2024-02-14 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 37 / 0.02           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 9471.855 USDT       |
+| Absolute profit             | -528.145 USDT       |
+| Total profit %              | -5.28%              |
+| CAGR %                      | -1.10%              |
+| Sortino                     | -0.03               |
+| Sharpe                      | -0.02               |
+| Calmar                      | -0.30               |
+| Profit factor               | 0.81                |
+| Expectancy (Ratio)          | -14.27 (-0.04)      |
+| Trades per day              | 0.02                |
+| Avg. daily profit %         | -0.00%              |
+| Avg. stake amount           | 2080.527 USDT       |
+| Total trade volume          | 76979.501 USDT      |
+|                             |                     |
+| Best Pair                   | LINK/USDT 49.38%    |
+| Worst Pair                  | DOT/USDT -52.28%    |
+| Best trade                  | LINK/USDT 29.00%    |
+| Worst trade                 | DOT/USDT -31.14%    |
+| Best day                    | 579.302 USDT        |
+| Worst day                   | -711.455 USDT       |
+| Days win/draw/lose          | 30 / 1703 / 6       |
+| Avg. Duration Winners       | 1 day, 16:48:00     |
+| Avg. Duration Loser         | 14 days, 0:00:00    |
+| Max Consecutive Wins / Loss | 13 / 2              |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9359.285 USDT       |
+| Max balance                 | 11530.538 USDT      |
+| Max % of account underwater | 18.83%              |
+| Absolute Drawdown (Account) | 18.83%              |
+| Absolute Drawdown           | 2171.253 USDT       |
+| Drawdown high               | 1530.538 USDT       |
+| Drawdown low                | -640.715 USDT       |
+| Drawdown Start              | 2021-04-22 00:00:00 |
+| Drawdown End                | 2023-08-17 12:00:00 |
+| Market change               | 1459.75%            |
+=====================================================
+
+Backtested 2019-03-26 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+============================================================================ STRATEGY SUMMARY ============================================================================
+|        Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|-----------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+-----------------------|
+| TrixV21Strategy |        37 |          -0.61 |         -22.44 |          -528.145 |          -5.28 | 4 days, 0:39:00 |    30     0     7  81.1 | 2171.253 USDT  18.83% |
+==========================================================================================================================================================================
+
+For more details, please look at the detail tables above

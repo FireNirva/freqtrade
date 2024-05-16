@@ -1,0 +1,197 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3806    False
+3807    False
+3808    False
+3809    False
+3810    False
+Name: trend_ichimoku_base, Length: 3811, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3074    False
+3075    False
+3076    False
+3077    False
+3078    False
+Name: trend_ichimoku_base, Length: 3079, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3806    False
+3807    False
+3808    False
+3809    False
+3810    False
+Name: trend_ichimoku_base, Length: 3811, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3706    False
+3707    False
+3708    False
+3709    False
+3710    False
+Name: trend_ichimoku_base, Length: 3711, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+2560    False
+2561    False
+2562    False
+2563    False
+2564    False
+Name: trend_ichimoku_base, Length: 2565, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3806    False
+3807    False
+3808    False
+3809    False
+3810    False
+Name: trend_ichimoku_base, Length: 3811, dtype: bool]
+[0        True
+1        True
+2        True
+3        True
+4        True
+        ...  
+3806    False
+3807    False
+3808    False
+3809    False
+3810    False
+Name: trend_ichimoku_base, Length: 3811, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+2545    False
+2546    False
+2547    False
+2548    False
+2549    False
+Name: trend_ichimoku_base, Length: 2550, dtype: bool]
+[0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3392    False
+3393    False
+3394    False
+3395    False
+3396    False
+Name: trend_ichimoku_base, Length: 3397, dtype: bool]
+Result for strategy GodStra
+============================================================= BACKTESTING REPORT =============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+|  ADA/USDT |        34 |           2.82 |          95.79 |          1867.218 |          18.67 | 12 days, 10:35:00 |    25     4     5  73.5 |
+|  BTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  BCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  ETH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+| LINK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  SOL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  XRP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+| ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     TOTAL |        34 |           2.82 |          95.79 |          1867.218 |          18.67 | 12 days, 10:35:00 |    25     4     5  73.5 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+============================================================ ENTER TAG STATS =============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+| OTHER |        34 |           2.82 |          95.79 |          1867.218 |          18.67 | 12 days, 10:35:00 |    25     4     5  73.5 |
+| TOTAL |        34 |           2.82 |          95.79 |          1867.218 |          18.67 | 12 days, 10:35:00 |    25     4     5  73.5 |
+===================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|           roi |      29 |     25     4     0   100 |           9.27 |         268.71 |           5705.69 |          53.74 |
+|     stop_loss |       5 |      0     0     5     0 |         -34.58 |        -172.92 |          -3838.48 |         -34.58 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-11-27 00:00:00 |
+| Backtesting to              | 2024-02-14 00:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 34 / 0.02           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 11867.218 USDT      |
+| Absolute profit             | 1867.218 USDT       |
+| Total profit %              | 18.67%              |
+| CAGR %                      | 3.33%               |
+| Sortino                     | 0.42                |
+| Sharpe                      | 0.05                |
+| Calmar                      | 0.98                |
+| Profit factor               | 1.49                |
+| Expectancy (Ratio)          | 54.92 (-0.05)       |
+| Trades per day              | 0.02                |
+| Avg. daily profit %         | 0.01%               |
+| Avg. stake amount           | 2146.563 USDT       |
+| Total trade volume          | 72983.142 USDT      |
+|                             |                     |
+| Best Pair                   | ADA/USDT 95.79%     |
+| Worst Pair                  | BTC/USDT 0.00%      |
+| Best trade                  | ADA/USDT 21.25%     |
+| Worst trade                 | ADA/USDT -34.64%    |
+| Best day                    | 479.693 USDT        |
+| Worst day                   | -830.14 USDT        |
+| Days win/draw/lose          | 25 / 519 / 5        |
+| Avg. Duration Winners       | 7 days, 6:43:00     |
+| Avg. Duration Loser         | 18 days, 4:48:00    |
+| Max Consecutive Wins / Loss | 9 / 3               |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 9707.394 USDT       |
+| Max balance                 | 12118.599 USDT      |
+| Max % of account underwater | 19.19%              |
+| Absolute Drawdown (Account) | 19.19%              |
+| Absolute Drawdown           | 2325.59 USDT        |
+| Drawdown high               | 2118.599 USDT       |
+| Drawdown low                | -206.991 USDT       |
+| Drawdown Start              | 2020-02-12 00:00:00 |
+| Drawdown End                | 2020-03-13 00:00:00 |
+| Market change               | 1459.75%            |
+=====================================================
+
+Backtested 2018-11-27 00:00:00 -> 2024-02-14 00:00:00 | Max open trades : 5
+========================================================================== STRATEGY SUMMARY ==========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |             Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------+----------------------|
+|    GodStra |        34 |           2.82 |          95.79 |          1867.218 |          18.67 | 12 days, 10:35:00 |    25     4     5  73.5 | 2325.59 USDT  19.19% |
+======================================================================================================================================================================
+
+For more details, please look at the detail tables above

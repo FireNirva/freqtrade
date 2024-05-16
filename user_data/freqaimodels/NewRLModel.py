@@ -24,7 +24,6 @@ class NewRLModel(ReinforcementLearner):
     Another common override may be `def data_cleaning_predict()` where the user can
     take fine-tuned control over the data handling pipeline.
     """
-
     class MyRLEnv(Base5ActionRLEnv):
         """
         User made custom environment. This class inherits from BaseEnvironment and gym.Env.
@@ -36,7 +35,6 @@ class NewRLModel(ReinforcementLearner):
         environment control features as possible. It is also designed to run quickly
         on small computers. This is a benchmark, it is *not* for live production.
         """
-
         def calculate_reward(self, action: int) -> float:
             # first, penalize if the action is not valid
             if not self._is_valid(action):
@@ -50,7 +48,7 @@ class NewRLModel(ReinforcementLearner):
             # you can use feature values from dataframe
             # Assumes the shifted RSI indicator has been generated in the strategy.
             rsi_now = self.raw_features[f"%-rsi-period_10_shift-1_{pair}_"
-                                        f"{self.config['timeframe']}"].iloc[self._current_tick]
+                            f"{self.config['timeframe']}"].iloc[self._current_tick]
 
             # reward agent for entering trades
             if (action in (Actions.Long_enter.value, Actions.Short_enter.value)
@@ -72,7 +70,7 @@ class NewRLModel(ReinforcementLearner):
                 factor *= 0.5
             # discourage sitting in position
             if self._position in (Positions.Short, Positions.Long) and \
-                    action == Actions.Neutral.value:
+            action == Actions.Neutral.value:
                 return -1 * trade_duration / max_trade_duration
             # close long
             if action == Actions.Long_exit.value and self._position == Positions.Long:

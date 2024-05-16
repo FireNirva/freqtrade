@@ -1,0 +1,99 @@
+Add {
+	"method": "AgeFilter",
+	"min_days_listed": 30
+},
+ to your pairlists in config (Under StaticPairList)
+Result for strategy NostalgiaForInfinityV5
+============================================================= BACKTESTING REPORT ============================================================
+|      Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|-----------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+|  DOT/USDT |        43 |           2.89 |         124.35 |          3547.433 |          35.47 |   1 day, 0:40:00 |    41     0     2  95.3 |
+|  SOL/USDT |        66 |           1.55 |         102.36 |          2754.066 |          27.54 | 2 days, 16:20:00 |    54     0    12  81.8 |
+| LINK/USDT |        76 |           1.55 |         117.84 |          2523.346 |          25.23 |  2 days, 0:35:00 |    64     0    12  84.2 |
+|  XRP/USDT |        65 |           0.82 |          53.58 |          1768.369 |          17.68 |   1 day, 9:29:00 |    59     0     6  90.8 |
+|  ADA/USDT |        73 |           1.14 |          82.94 |          1017.033 |          10.17 |  2 days, 4:00:00 |    61     0    12  83.6 |
+| ALGO/USDT |        68 |           0.71 |          48.15 |           989.143 |           9.89 | 2 days, 13:23:00 |    56     0    12  82.4 |
+|  BCH/USDT |        55 |           0.12 |           6.59 |          -251.758 |          -2.52 |  2 days, 4:08:00 |    47     0     8  85.5 |
+|  BTC/USDT |        57 |          -0.42 |         -23.71 |          -404.338 |          -4.04 |  1 day, 22:28:00 |    43     0    14  75.4 |
+|  ETH/USDT |        64 |          -1.87 |        -119.82 |         -3577.818 |         -35.78 |  3 days, 7:33:00 |    48     0    16  75.0 |
+|     TOTAL |       567 |           0.69 |         392.27 |          8365.477 |          83.65 |  2 days, 4:28:00 |   473     0    94  83.4 |
+======================================================= LEFT OPEN TRADES REPORT ========================================================
+|   Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |
+|--------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------|
+|  TOTAL |         0 |           0.00 |           0.00 |             0.000 |           0.00 |           0:00 |     0     0     0     0 |
+=========================================================== ENTER TAG STATS ============================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| OTHER |       567 |           0.69 |         392.27 |          8365.477 |          83.65 | 2 days, 4:28:00 |   473     0    94  83.4 |
+| TOTAL |       567 |           0.69 |         392.27 |          8365.477 |          83.65 | 2 days, 4:28:00 |   473     0    94  83.4 |
+======================================================== EXIT REASON STATS ========================================================
+|         Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|---------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+| signal_profit_u_e_1 |     183 |    183     0     0   100 |           0.95 |         173.39 |          5000.23  |          34.68 |
+|   signal_profit_u_1 |     130 |    130     0     0   100 |           2.79 |         362.1  |         10717.5   |          72.42 |
+| signal_stoploss_u_1 |      67 |      0     0    67     0 |          -8.31 |        -556.5  |        -16905.7   |        -111.3  |
+|     signal_profit_0 |      62 |     62     0     0   100 |           1.44 |          89.36 |          2551.55  |          17.87 |
+|         exit_signal |      46 |     19     0    27  41.3 |          -7.4  |        -340.36 |        -11684.9   |         -68.07 |
+|     signal_profit_3 |      31 |     31     0     0   100 |          12.03 |         373.01 |         10770.3   |          74.6  |
+|   signal_profit_d_1 |      18 |     18     0     0   100 |           5.92 |         106.57 |          2994.68  |          21.31 |
+|     signal_profit_2 |      13 |     13     0     0   100 |           5.71 |          74.29 |          2025.73  |          14.86 |
+|     signal_profit_1 |      10 |     10     0     0   100 |           3.7  |          36.97 |          1049.18  |           7.39 |
+|   signal_profit_t_2 |       4 |      4     0     0   100 |           6.4  |          25.61 |           689.815 |           5.12 |
+|   signal_profit_u_2 |       2 |      2     0     0   100 |           6.38 |          12.76 |           307.693 |           2.55 |
+|     signal_profit_4 |       1 |      1     0     0   100 |          35.07 |          35.07 |           849.298 |           7.01 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2018-12-05 08:00:00 |
+| Backtesting to              | 2024-02-14 20:00:00 |
+| Max open trades             | 5                   |
+|                             |                     |
+| Total/Daily Avg Trades      | 567 / 0.3           |
+| Starting balance            | 10000 USDT          |
+| Final balance               | 18365.477 USDT      |
+| Absolute profit             | 8365.477 USDT       |
+| Total profit %              | 83.65%              |
+| CAGR %                      | 12.41%              |
+| Sortino                     | 0.21                |
+| Sharpe                      | 0.34                |
+| Calmar                      | 2.07                |
+| Profit factor               | 1.26                |
+| Expectancy (Ratio)          | 14.75 (0.04)        |
+| Trades per day              | 0.3                 |
+| Avg. daily profit %         | 0.04%               |
+| Avg. stake amount           | 2858.667 USDT       |
+| Total trade volume          | 1620864.192 USDT    |
+|                             |                     |
+| Best Pair                   | DOT/USDT 124.35%    |
+| Worst Pair                  | ETH/USDT -119.82%   |
+| Best trade                  | DOT/USDT 35.07%     |
+| Worst trade                 | BCH/USDT -44.07%    |
+| Best day                    | 1001.376 USDT       |
+| Worst day                   | -3414.575 USDT      |
+| Days win/draw/lose          | 280 / 1515 / 75     |
+| Avg. Duration Winners       | 20:30:00            |
+| Avg. Duration Loser         | 8 days, 21:22:00    |
+| Max Consecutive Wins / Loss | 29 / 4              |
+| Rejected Entry signals      | 106                 |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 7904.668 USDT       |
+| Max balance                 | 23442.62 USDT       |
+| Max % of account underwater | 40.76%              |
+| Absolute Drawdown (Account) | 40.76%              |
+| Absolute Drawdown           | 9555.267 USDT       |
+| Drawdown high               | 13442.62 USDT       |
+| Drawdown low                | 3887.353 USDT       |
+| Drawdown Start              | 2021-05-17 06:30:00 |
+| Drawdown End                | 2022-05-30 02:30:00 |
+| Market change               | 1416.53%            |
+=====================================================
+
+Backtested 2018-12-05 08:00:00 -> 2024-02-14 20:00:00 | Max open trades : 5
+================================================================================ STRATEGY SUMMARY ===============================================================================
+|               Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |              Drawdown |
+|------------------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+-----------------------|
+| NostalgiaForInfinityV5 |       567 |           0.69 |         392.27 |          8365.477 |          83.65 | 2 days, 4:28:00 |   473     0    94  83.4 | 9555.267 USDT  40.76% |
+=================================================================================================================================================================================
+
+For more details, please look at the detail tables above
